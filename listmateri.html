@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Daftar Materi
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="./assets/css/material-kit.min.css" rel="stylesheet" />
+    <link href="./assets/css/mycustom.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+
+    <style>
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #555;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #fafafa;
+        }
+    </style>
+
+</head>
+
+<body class="index-page sidebar-collapse">
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="10"
+        id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="https://www.inseed.web.id/index.html">
+                    Material Kit
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <i class="material-icons">apps</i> Menu
+                        </a>
+                        <div class="dropdown-menu dropdown-with-icons">
+                            <a href="index.html" class="dropdown-item">
+                                <i class="material-icons">home</i> Beranda
+                            </a>
+                            <a href="listmateri.html" class="dropdown-item">
+                                <i class="material-icons">library_books</i> Belajar Bareng
+                            </a>
+                            <a href="profile-page.html" class="dropdown-item">
+                                <i class="material-icons">live_help</i> Alasan Kita ...
+                            </a>
+                            <a href="login-page.html" class="dropdown-item">
+                                <i class="material-icons">security</i> Masuk
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
+                            href="https://twitter.com/apri0498" target="_blank"
+                            data-original-title="Follow us on Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
+                            href="https://www.instagram.com/apri0498" target="_blank"
+                            data-original-title="Follow us on Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header header-filter asyncImage" data-parallax="true" style="background-image: url('./assets/img/bg5.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <div class="brand">
+                        <h1>KEJAR</h1>
+                        <h3>Kelompok Belajar</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main main-raised">
+        <div class="section section-basic">
+            <div class="container ">
+                <div class="title">
+                    <h2>List Materi Kuliah</h2>
+                </div>
+
+                <div class="space-10"></div>
+                <!--                 inputs -->
+                <div id="inputs">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="material-icons">search</i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Belum Bisa...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end inputs -->
+
+                <button class="collapsible">Jaringan</button>
+                <div class="content">
+                    <div class="table-responsive">
+                        <table class="table table-hover" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        #
+                                    </th>
+                                    <th>
+                                        Judul
+                                    </th>
+                                    <th>
+                                        Kategori
+                                    </th>
+                                    <th>
+                                        Publisher
+                                    </th>
+                                    <th>
+                                        Tanggal
+                                    </th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        Belajar Pemrograman Jaringan
+                                    </td>
+                                    <td>
+                                        Pemrograman Jaringan
+                                    </td>
+                                    <td>
+                                        Masuk Pak Eko
+                                    </td>
+                                    <td>
+                                        11/02/2019
+                                    </td>
+                                    <td>
+                                        <a href="detail.html" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i>
+                                        </a>
+                                        <a href="<?php echo base_url ('index.php/Dashboard/hapusArtikel/'). $var->idArtikel;?>"
+                                            class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        Bagaimana Menghancurkan Perusahaanmu
+                                    </td>
+                                    <td>
+                                        Keamanan Jaringan
+                                    </td>
+                                    <td>
+                                        Masuk Pak Eko
+                                    </td>
+                                    <td>
+                                        11/02/2019
+                                    </td>
+                                    <td>
+                                        <a href="detail.html" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i>
+                                        </a>
+                                        <a href="<?php echo base_url ('index.php/Dashboard/hapusArtikel/'). $var->idArtikel;?>"
+                                            class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <button class="collapsible">Card-card-an buatan</button>
+                <div class="content">
+                    <h2>Ups maaf belum ada.</h2>
+
+                    <div class="card-deck" style="padding-bottom:2%;">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/img/examples/studio-1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/img/examples/studio-2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/img/examples/studio-3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="collapsible">Open Section 3</button>
+                <div class="content">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</h5>
+                </div>
+
+                <div class="space-20"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--  End Modal -->
+    <footer class="mdl-mini-footer" style="margin-top:30px;">
+
+    </footer>
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/material-kit.min.js?v=2.0.5" type="text/javascript"></script>
+    
+    <!-- optimise kecepatan load gambar -->
+    <script src="./assets/js/mycustom.js" type="text/javascript"></script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
