@@ -314,3 +314,13 @@ tbody:nth-child(even) {
   bottom: 0;
   line-height: 40px;
 }
+
+
+.box {
+  transition: box-shadow .3s;
+  border-radius:10px;
+}
+.box:hover {
+  box-shadow: 0 11px 11px rgba(46, 46, 46, 0.2); 
+}
+
