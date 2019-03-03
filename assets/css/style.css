@@ -151,7 +151,7 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
 
 /* di edit */
 .isi {
-  padding: 1rem 5rem;
+  padding: 3rem;
 }
 
 .post-heading h3 a {
@@ -369,7 +369,7 @@ aside {
     border-right: none;
   }
   .isi {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
   }
 }
 
