@@ -18,8 +18,13 @@
     <!-- CSS Files -->
     <link href="./assets/css/material-kit.min.css" rel="stylesheet" />
     <link href="./assets/css/mycustom.css" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
 
+    <!-- css tambahan -->
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+
+    <!-- menghindari injeksi ads telkom -->
+    <!-- </head> -->
     <style>
         .collapsible {
             background-color: #777;
@@ -119,7 +124,8 @@
             </div>
         </div>
     </nav>
-    <div class="page-header header-filter asyncImage" data-parallax="true" style="background-image: url('./assets/img/bg5.jpg');">
+    <div class="page-header header-filter asyncImage" data-parallax="true"
+        style="background-image: url('./assets/img/bg5.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
@@ -200,7 +206,8 @@
                                         11/02/2019
                                     </td>
                                     <td>
-                                        <a href="detailmateri.html" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i>
+                                        <a href="detailmateri.html" class="btn btn-sm btn-primary"><i
+                                                class="fa fa-eye"></i>
                                         </a>
                                         <a href="<?php echo base_url ('index.php/Dashboard/hapusArtikel/'). $var->idArtikel;?>"
                                             class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </a>
@@ -225,7 +232,8 @@
                                         11/02/2019
                                     </td>
                                     <td>
-                                        <a href="detailmateri.html" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i>
+                                        <a href="detailmateri.html" class="btn btn-sm btn-primary"><i
+                                                class="fa fa-eye"></i>
                                         </a>
                                         <a href="<?php echo base_url ('index.php/Dashboard/hapusArtikel/'). $var->idArtikel;?>"
                                             class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </a>
@@ -240,36 +248,40 @@
                     <h2>Ups maaf belum ada.</h2>
 
                     <div class="card-deck" style="padding-bottom:2%;">
-                    <div class="card">
-                        <img class="card-img-top" src="./assets/img/examples/studio-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/img/examples/studio-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/img/examples/studio-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="./assets/img/examples/studio-2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/img/examples/studio-3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="./assets/img/examples/studio-3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <button class="collapsible">Open Section 3</button>
@@ -289,7 +301,7 @@
 
     </footer>
     <!--   Core JS Files   -->
-    <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
     <script src="./assets/js/plugins/moment.min.js"></script>
@@ -299,7 +311,7 @@
     <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="./assets/js/material-kit.min.js?v=2.0.5" type="text/javascript"></script>
-    
+
     <!-- optimise kecepatan load gambar -->
     <script src="./assets/js/mycustom.js" type="text/javascript"></script>
 
@@ -319,6 +331,9 @@
             });
         }
     </script>
+
+    <!-- menghindari injeksi ads telkom -->
+    <!-- </body></html> -->
 
 </body>
 
