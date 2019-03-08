@@ -21,7 +21,12 @@
 
     <!-- css tambahan -->
     <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet" />
-    <link href="./assets/css/style.css" rel="stylesheet" />
+
+    <!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/css/froala_editor.pkgd.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/css/froala_style.min.css" rel="stylesheet"
+        type="text/css" />
 
     <!-- menghindari injeksi ads telkom -->
     <!-- </head> -->
@@ -188,8 +193,9 @@
                                         <h3><strong>Di Bawah Ini Nanti Yutub</strong></h3>
                                     </div>
                                     <div class="sesivideo embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MP5QUuLDIAE?color=white"
-                                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/MP5QUuLDIAE?color=white" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                             allowfullscreen></iframe>
                                     </div>
 
@@ -351,6 +357,18 @@
                                     </div>
                                 </div>
                                 <h4>Leave your comment</h4>
+                                <!-- You can use a div tag as well as textarea. -->
+                                <form class="contact-form">
+                                    <div class="form-group">
+                                        <textarea id="froala-editor"></textarea>
+                                    </div>
+                                    <div class="col-lg-4 ml-auto text-center">
+                                        <button class="btn btn-primary btn-raised">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                                <!-- selesai -->
                             </div>
                         </div>
                     </div>
@@ -377,7 +395,27 @@
 
     <!-- optimise kecepatan load gambar -->
     <script src="./assets/js/mycustom.js" type="text/javascript"></script>
-  
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/js/froala_editor.pkgd.min.js"></script>
+
+    <!-- Initialize the editor. -->
+    <script>
+        $(function () {
+            $('textarea#froala-editor').froalaEditor({
+                placeholderText: 'Gimana pendapat kamu?',
+                iframe: true,
+                toolbarInline: true,
+                charCounterCount: true,
+                // iframeStyleFiles: ['./assets/css/material-kit.min.css'],
+                toolbarButtons: ['bold', 'italic', 'underline', 'emoticons', 'insertLink']
+            })
+        });
+    </script>
+
     <!-- menghindari injeksi ads telkom -->
     <!-- </body></html> -->
 
