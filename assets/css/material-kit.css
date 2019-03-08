@@ -91,10 +91,11 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
+/* di edit */
 p {
   font-family: 'PT Sans', sans-serif;
   font-size: 0.95rem;
-  color: #575757;
+  color: #3b3b3b;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -4584,8 +4585,9 @@ tbody.collapse.show {
   color: #ffffff;
 }
 
+/* di edit relative jadi none */
 .card {
-  position: relative;
+  position: none;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -16463,9 +16465,8 @@ footer .pull-center {
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(244, 67, 54, 0.6);
 }
 
-/* di edit */
 .card .card-header-rose {
-  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(233, 203, 30, 0.6);
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(233, 30, 99, 0.6);
 }
 
 .card .card-header-warning {
