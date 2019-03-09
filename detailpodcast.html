@@ -22,12 +22,7 @@
     <!-- css tambahan -->
     <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet" />
 
-    <!-- Include Editor style. -->
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/css/froala_editor.pkgd.min.css" rel="stylesheet"
-        type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/css/froala_style.min.css" rel="stylesheet"
-        type="text/css" />
-
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/balloon/ckeditor.js"></script>
     <!-- menghindari injeksi ads telkom -->
     <!-- </head> -->
 </head>
@@ -234,10 +229,11 @@
                                     </div>
                                 </div>
                                 <h4>Leave your comment</h4>
-                                <!-- You can use a div tag as well as textarea. -->
-                                <form class="contact-form">
+                                <!-- You can use a div tag as well as textarea. textarea ngebug -->
+                                <form class="contact-form" method="POST">
                                     <div class="form-group">
-                                        <textarea id="froala-editor"></textarea>
+                                        <div class="form-control" id="editor" name="editor">
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 ml-auto text-center">
                                         <button class="btn btn-primary btn-raised">
@@ -273,26 +269,20 @@
     <!-- optimise kecepatan load gambar -->
     <script src="./assets/js/mycustom.js" type="text/javascript"></script>
 
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
-    <!-- Include Editor JS files. -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/js/froala_editor.pkgd.min.js"></script>
-
-    <!-- Initialize the editor. -->
+    <!-- ckeditor5 -->
     <script>
-        $(function () {
-            $('textarea#froala-editor').froalaEditor({
-                placeholderText: 'Gimana pendapat kamu?',
-                iframe: true,
-                toolbarInline: true,
-                charCounterCount: true,
-                // iframeStyleFiles: ['./assets/css/material-kit.min.css'],
-                toolbarButtons: ['bold', 'italic', 'underline', 'emoticons', 'insertLink']
+        BalloonEditor
+            .create(document.querySelector('#editor'), {
+                balloonToolbar: {
+                    items: ['bold', 'italic', 'link', '|', 'bulletedList', 'numberedList'],
+                    viewportTopOffset: 30
+                },
+                placeholder: 'Gimana menurut komentar netizen?'
             })
-        });
+            .catch(error => {
+                console.error(error);
+            });
     </script>
-
     <!-- menghindari injeksi ads telkom -->
     <!-- </body></html> -->
 
