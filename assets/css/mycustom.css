@@ -1,5 +1,5 @@
-
 /* untuk keperluan pewarnaan table */
+
 tbody:nth-child(odd) {
   background: #f3f3f3;
 }
@@ -129,6 +129,7 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
 }
 
 /* di edit */
+
 .isi {
   padding: 3rem;
 }
@@ -315,6 +316,7 @@ ul.meta-post li a {
 ================================ */
 
 /* di edit dari relative jadi none */
+
 aside {
   position: none;
   margin-bottom: 40px;
@@ -326,6 +328,7 @@ aside {
 }
 
 /* di edit */
+
 .right-sidebar {
   border-left: 1px solid #e9e9e9;
   /* padding: 0 0 0 30px; */
@@ -335,6 +338,7 @@ aside {
 }
 
 /* di edit */
+
 .left-sidebar {
   border-right: 1px solid #e9e9e9;
   padding: 0 10px 0 0;
@@ -342,8 +346,8 @@ aside {
   box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01);
 }
 
-
 /* kebutuhan post */
+
 @media all and (max-width: 800px) {
   .left-sidebar {
     border-right: none;
@@ -414,6 +418,7 @@ ul.recent li h6 a {
 }
 
 /* di edit */
+
 .widget ul.tags li a:hover {
   text-decoration: none;
   color: #f44336;
@@ -581,9 +586,8 @@ article img.pull-right, article .align-right {
   margin: 5px 0 15px 15px;
 }
 
-
-
 /* ukuran video */
+
 .sesivideo {
   max-width: 50rem;
   display: table;
@@ -593,8 +597,9 @@ article img.pull-right, article .align-right {
 
 /* Team Section
 --------------------------------*/
+
 #team .team-block {
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.06);
   height: 254px;
   overflow: hidden;
   position: relative;
@@ -646,7 +651,7 @@ article img.pull-right, article .align-right {
   color: #f44336;
 }
 
-#team .team-block .team-content ul > span {
+#team .team-block .team-content ul>span {
   display: inline-block;
   font-size: 14px;
   font-weight: 300;
@@ -661,12 +666,13 @@ article img.pull-right, article .align-right {
 }
 
 /* hover fb yang ada di profil page */
+
 .name a .fa:hover {
   color: #f44336;
 }
 
-
 /* share button */
+
 #floating-button {
   width: 55px;
   height: 55px;
@@ -861,25 +867,13 @@ article img.pull-right, article .align-right {
 #container-floating:hover .nd3 {
   animation-delay: 0.08s;
 }
+
 #container-floating:hover .nd4 {
   animation-delay: 0.15s;
 }
+
 #container-floating:hover .nd5 {
   animation-delay: 0.2s;
-}
-
-.letter {
-  font-size: 23px;
-  font-family: "Roboto";
-  color: white;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0;
-  top: 0;
-  bottom: 0;
-  text-align: center;
-  line-height: 40px;
 }
 
 .reminder {
@@ -892,10 +886,14 @@ article img.pull-right, article .align-right {
   line-height: 40px;
 }
 
+/* super smooooottthhh hover card */
 
 .box {
-  transition: box-shadow .2s;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out 0s;
 }
+
 .box:hover {
-  box-shadow: 0 5px 8px rgba(105, 105, 105, 0.2); 
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 20px 32px rgba(0, 0, 0, 0.11), 0 5px 8px rgba(105, 105, 105, 0.2);
 }
