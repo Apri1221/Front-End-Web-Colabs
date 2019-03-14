@@ -647,6 +647,7 @@ article img.pull-right, article .align-right {
   transition: 0.3s;
 }
 
+/* di edit */
 #team .team-block .team-content ul li a .fa:hover {
   color: #f44336;
 }
