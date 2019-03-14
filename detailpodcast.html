@@ -10,7 +10,7 @@
         Daftar Materi
     </title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
-    name="viewport" />
+        name="viewport" />
     <!-- Fonts and icons -->
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -18,6 +18,14 @@
     <!-- CSS Files -->
     <link href="./assets/css/material-kit.min.css" rel="stylesheet" />
     <link href="./assets/css/mycustom.css" rel="stylesheet" />
+    
+    <style>
+        @media (max-width: 991px) {
+            .video {
+                padding: 12px 10px 0px;
+            }
+        }
+    </style>
 
     <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/balloon/ckeditor.js"></script>
     <!-- menghindari injeksi ads telkom -->
@@ -95,7 +103,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container video">
         <div class="row">
             <div class="sesivideo embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9hRykEi5Usw?color=white"
@@ -108,136 +116,133 @@
     <div class="space-100"></div>
     <div class="main main-raised">
         <div class="section section-basic">
-            <div class="profile-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 ml-auto mr-auto">
-                            <!-- Fungsi share button, all icons credit to flaticon.com -->
-                            <div id="container-floating">
-                                <div class="nd5 nds" data-toggle="tooltip" data-placement="left"
-                                    data-original-title="Via Email">
-                                    <a target="_blank"
-                                        href="mailto:?Subject=Coba lihat situs ini&amp;Body=Situs%20ini%20masih%20tahap%20uji%20coba.%20 https://www.inseed.web.id">
-                                        <img class="reminder" src="./assets/img/icon/google-plus.svg"
-                                            alt="Email" />
-                                    </a>
-                                </div>
-                                <div class="nd4 nds" data-toggle="tooltip" data-placement="left"
-                                    data-original-title="Via Line">
-                                    <a target="_blank"
-                                        href="https://social-plugins.line.me/lineit/share?url=https://www.inseed.web.id">
-                                        <img class="reminder rounded-circle"
-                                            src="./assets/img/icon/line.svg" alt="Line" />
-                                    </a>
-                                </div>
-
-                                <div class="nd3 nds" data-toggle="tooltip" data-placement="left"
-                                    data-original-title="Via Facebook">
-                                    <a target="_blank"
-                                        href="http://www.facebook.com/sharer.php?u=https://www.inseed.web.id">
-                                        <img class="reminder rounded-circle"
-                                            src="./assets/img/icon/facebook.svg" alt="Facebook" />
-                                    </a>
-                                </div>
-
-                                <div class="nd1 nds" data-toggle="tooltip" data-placement="left"
-                                    data-original-title="Via Twitter">
-                                    <a target="_blank"
-                                        href="https://twitter.com/share?url=https://www.inseed.web.id&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons">
-                                        <img class="reminder rounded-circle"
-                                            src="./assets/img/icon/twitter.svg" alt="Twitter" />
-                                    </a>
-                                </div>
-
-                                <div id="floating-button" data-toggle="tooltip" data-placement="left">
-                                    <p class="plus"><i class="material-icons">share</i></p>
-                                    <!-- https://www.flaticon.com/free-icon/favorite-heart-button_60993 -->
-                                    <img class="edit" style="height:25px"
-                                        src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMCA1MTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMCA1MTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48Zz4KCTxnIGlkPSJmYXZvcml0ZSI+CgkJPHBhdGggZD0iTTI1NSw0ODkuNmwtMzUuNy0zNS43Qzg2LjcsMzM2LjYsMCwyNTcuNTUsMCwxNjAuNjVDMCw4MS42LDYxLjIsMjAuNCwxNDAuMjUsMjAuNGM0My4zNSwwLDg2LjcsMjAuNCwxMTQuNzUsNTMuNTUgICAgQzI4My4wNSw0MC44LDMyNi40LDIwLjQsMzY5Ljc1LDIwLjRDNDQ4LjgsMjAuNCw1MTAsODEuNiw1MTAsMTYwLjY1YzAsOTYuOS04Ni43LDE3NS45NS0yMTkuMywyOTMuMjVMMjU1LDQ4OS42eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI0Y3RjdGNyI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
-                                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <!-- Fungsi share button, all icons credit to flaticon.com -->
+                        <div id="container-floating">
+                            <div class="nd5 nds" data-toggle="tooltip" data-placement="left"
+                                data-original-title="Via Email">
+                                <a target="_blank"
+                                    href="mailto:?Subject=Coba lihat situs ini&amp;Body=Situs%20ini%20masih%20tahap%20uji%20coba.%20 https://www.inseed.web.id">
+                                    <img class="reminder" src="./assets/img/icon/google-plus.svg" alt="Email" />
+                                </a>
                             </div>
-                            <!-- akhir dari button share -->
-                            <div class="description text-center">
-                                <p style="color:black">Coba - coba mengerjakan sesuatu yang bermanfaat, tanpa pamrih,
-                                    tidak
-                                    sedang
-                                    mengikuti lomba, tidak commercial, dan sebagainya.</p>
+                            <div class="nd4 nds" data-toggle="tooltip" data-placement="left"
+                                data-original-title="Via Line">
+                                <a target="_blank"
+                                    href="https://social-plugins.line.me/lineit/share?url=https://www.inseed.web.id">
+                                    <img class="reminder rounded-circle" src="./assets/img/icon/line.svg" alt="Line" />
+                                </a>
                             </div>
 
-                            <div class="comment-area">
-                                <h4>4 Komentar</h4>
-                                <div class="media">
-                                    <a href="#" class="thumbnail pull-left"><img
-                                            src="./assets/img/faces/card-profile4-square.jpg" alt="" /></a>
-                                    <div class="media-body">
-                                        <div class="media-content">
-                                            <h6><span>March 12, 2013</span> Karen medisson</h6>
-                                            <p>
-                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                                                scelerisque ante sollicitudin commodo. Cras purus odio,
-                                                vestibulum
-                                                in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                                ac
-                                                nisi vulputate fringilla. Donec lacinia congue felis in
-                                                faucibus.
-                                            </p>
-                                            <!-- <a href="#" class="align-right">Reply comment</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a href="#" class="thumbnail pull-left"><img
-                                            src="./assets/img/faces/card-profile2-square.jpg" alt="" /></a>
-                                    <div class="media-body">
-                                        <div class="media-content">
-                                            <h6><span>March 12, 2013</span> Smith sanderson</h6>
-                                            <p>
-                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                                                scelerisque ante sollicitudin commodo. Cras purus odio,
-                                                vestibulum
-                                                in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                                ac
-                                                nisi vulputate fringilla. Donec lacinia congue felis in
-                                                faucibus.
-                                            </p>
-                                            <!-- <a href="#" class="align-right">Reply comment</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a href="#" class="thumbnail pull-left"><img
-                                            src="./assets/img/faces/card-profile1-square.jpg" alt="" /></a>
-                                    <div class="media-body">
-                                        <div class="media-content">
-                                            <h6><span>March 12, 2013</span> Vicky lumora</h6>
-                                            <p>
-                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                                                scelerisque ante sollicitudin commodo. Cras purus odio,
-                                                vestibulum
-                                                in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                                ac
-                                                nisi vulputate fringilla. Donec lacinia congue felis in
-                                                faucibus.
-                                            </p>
-                                            <!-- <a href="#" class="align-right">Reply comment</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4>Leave your comment</h4>
-                                <!-- You can use a div tag as well as textarea. textarea ngebug -->
-                                <form class="contact-form" method="POST">
-                                    <div class="form-group">
-                                        <div class="form-control" id="editor" name="editor" style="box-shadow:none; border:none">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 ml-auto text-center">
-                                        <button class="btn btn-primary btn-raised">
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </form>
-                                <!-- selesai -->
+                            <div class="nd3 nds" data-toggle="tooltip" data-placement="left"
+                                data-original-title="Via Facebook">
+                                <a target="_blank"
+                                    href="http://www.facebook.com/sharer.php?u=https://www.inseed.web.id">
+                                    <img class="reminder rounded-circle" src="./assets/img/icon/facebook.svg"
+                                        alt="Facebook" />
+                                </a>
                             </div>
+
+                            <div class="nd1 nds" data-toggle="tooltip" data-placement="left"
+                                data-original-title="Via Twitter">
+                                <a target="_blank"
+                                    href="https://twitter.com/share?url=https://www.inseed.web.id&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons">
+                                    <img class="reminder rounded-circle" src="./assets/img/icon/twitter.svg"
+                                        alt="Twitter" />
+                                </a>
+                            </div>
+
+                            <div id="floating-button" data-toggle="tooltip" data-placement="left">
+                                <p class="plus"><i class="material-icons">share</i></p>
+                                <!-- https://www.flaticon.com/free-icon/favorite-heart-button_60993 -->
+                                <img class="edit" style="height:25px"
+                                    src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMCA1MTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMCA1MTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48Zz4KCTxnIGlkPSJmYXZvcml0ZSI+CgkJPHBhdGggZD0iTTI1NSw0ODkuNmwtMzUuNy0zNS43Qzg2LjcsMzM2LjYsMCwyNTcuNTUsMCwxNjAuNjVDMCw4MS42LDYxLjIsMjAuNCwxNDAuMjUsMjAuNGM0My4zNSwwLDg2LjcsMjAuNCwxMTQuNzUsNTMuNTUgICAgQzI4My4wNSw0MC44LDMyNi40LDIwLjQsMzY5Ljc1LDIwLjRDNDQ4LjgsMjAuNCw1MTAsODEuNiw1MTAsMTYwLjY1YzAsOTYuOS04Ni43LDE3NS45NS0yMTkuMywyOTMuMjVMMjU1LDQ4OS42eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI0Y3RjdGNyI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                            </div>
+                        </div>
+                        <!-- akhir dari button share -->
+                        <div class="description text-center">
+                            <p style="color:black">Coba - coba mengerjakan sesuatu yang bermanfaat, tanpa pamrih,
+                                tidak
+                                sedang
+                                mengikuti lomba, tidak commercial, dan sebagainya.</p>
+                        </div>
+
+                        <div class="comment-area">
+                            <h4>4 Komentar</h4>
+                            <div class="media">
+                                <a href="#" class="thumbnail pull-left"><img
+                                        src="./assets/img/faces/card-profile4-square.jpg" alt="" /></a>
+                                <div class="media-body">
+                                    <div class="media-content">
+                                        <h6><span>March 12, 2013</span> Karen medisson</h6>
+                                        <p>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                            scelerisque ante sollicitudin commodo. Cras purus odio,
+                                            vestibulum
+                                            in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                                            ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in
+                                            faucibus.
+                                        </p>
+                                        <!-- <a href="#" class="align-right">Reply comment</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a href="#" class="thumbnail pull-left"><img
+                                        src="./assets/img/faces/card-profile2-square.jpg" alt="" /></a>
+                                <div class="media-body">
+                                    <div class="media-content">
+                                        <h6><span>March 12, 2013</span> Smith sanderson</h6>
+                                        <p>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                            scelerisque ante sollicitudin commodo. Cras purus odio,
+                                            vestibulum
+                                            in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                                            ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in
+                                            faucibus.
+                                        </p>
+                                        <!-- <a href="#" class="align-right">Reply comment</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a href="#" class="thumbnail pull-left"><img
+                                        src="./assets/img/faces/card-profile1-square.jpg" alt="" /></a>
+                                <div class="media-body">
+                                    <div class="media-content">
+                                        <h6><span>March 12, 2013</span> Vicky lumora</h6>
+                                        <p>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                            scelerisque ante sollicitudin commodo. Cras purus odio,
+                                            vestibulum
+                                            in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                                            ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in
+                                            faucibus.
+                                        </p>
+                                        <!-- <a href="#" class="align-right">Reply comment</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Leave your comment</h4>
+                            <!-- You can use a div tag as well as textarea. textarea ngebug -->
+                            <form class="contact-form" method="POST">
+                                <div class="form-group">
+                                    <div class="form-control" id="editor" name="editor"
+                                        style="box-shadow:none; border:none">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 ml-auto text-center">
+                                    <button class="btn btn-primary btn-raised">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                            <!-- selesai -->
                         </div>
                     </div>
                 </div>

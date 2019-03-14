@@ -10666,20 +10666,20 @@ label {
   transition: all 370ms linear;
 }
 
-/* di edit 150ms ease 0s jadi 150ms cubic bezier*/
+/* di edit 150ms ease 0s jadi 100ms cubic bezier*/
 .animation-transition-fast,
 .bootstrap-datetimepicker-widget table td>div,
 .bootstrap-datetimepicker-widget table th>div,
 .bootstrap-datetimepicker-widget table th,
 .bootstrap-datetimepicker-widget table td span {
-  -webkit-transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-  -moz-transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-  -ms-transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* di edit 150ms ease 0s jadi 150ms cubic bezier*/
+/* di edit 150ms ease 0s jadi 100ms cubic bezier*/
 .animation-transition-fast,
 .bootstrap-datetimepicker-widget table td>div,
 .bootstrap-datetimepicker-widget table th>div,
@@ -10689,11 +10689,11 @@ label {
 .bootstrap-tagsinput .tag,
 .bootstrap-tagsinput [data-role="remove"],
 .card-collapse .card-header a i {
-  -webkit-transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-  -moz-transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-  -ms-transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .signup-page .card-signup form .form-check {
