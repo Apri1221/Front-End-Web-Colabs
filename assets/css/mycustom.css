@@ -595,7 +595,6 @@ article img.pull-right, article .align-right {
   height: auto;
 }
 
-
 /* Team Section
 --------------------------------*/
 
@@ -649,6 +648,7 @@ article img.pull-right, article .align-right {
 }
 
 /* di edit */
+
 #team .team-block .team-content ul li a .fa:hover {
   color: #f44336;
 }
@@ -888,14 +888,89 @@ article img.pull-right, article .align-right {
   line-height: 40px;
 }
 
-/* super smooooottthhh hover card */
 
+/* card customization */
+
+/* super smooooottthhh hover card */
 .box {
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease-in-out 0s;
 }
 
 .box:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
+  transform: translateY(-5px);
   box-shadow: 0 20px 32px rgba(0, 0, 0, 0.11), 0 5px 8px rgba(105, 105, 105, 0.2);
 }
+
+/* set length of text card */
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;     /* n baris dikali X tinggi */
+  max-height: 32px;      /* hasilnya */
+  -webkit-line-clamp: 2; /* jumlah baris yang akan ditampilkan */
+  -webkit-box-orient: vertical;
+}
+
+/* set width content card mobile and desktop */
+.widthbox {
+  width: 20rem;
+}
+
+@media (max-width: 767px) {
+  .widthbox {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .widthbox {
+    width: 16rem;
+  }
+}
+
+/* card carousel -- specific navigation custom */
+/* dibuat dengan cinta oleh apri */
+/* dokumentasi : https://codepen.io/peshoto/pen/yxewzg */
+
+.main-content .owl-theme .owl-prev, 
+.main-content .owl-theme .owl-next {
+  position: absolute;
+  height: 60px;
+  top: 40%;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: block !important;
+  color: inherit;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0 5px 11px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev, 
+.owl-carousel button.owl-dot {
+  background: #9c27b0;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #861b99;
+}
+
+.main-content .owl-theme .owl-prev i, 
+.main-content .owl-theme .owl-next i {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.main-content .owl-theme .owl-prev {
+  left: 0;
+}
+
+.main-content .owl-theme .owl-next {
+  right: 0;
+}
+
+/* end of card customization */
