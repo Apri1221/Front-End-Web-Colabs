@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
     <!-- CSS Files -->
     <link href="./assets/css/material-kit.min.css" rel="stylesheet" />
     <link href="./assets/css/mycustom.css" rel="stylesheet" />
@@ -52,11 +53,11 @@
                             <a href="index.html" class="dropdown-item">
                                 <i class="material-icons">home</i> Beranda
                             </a>
+                            <a href="listpodcast.html" class="dropdown-item">
+                                <i class="material-icons">video_library</i> Insight
+                            </a>
                             <a href="listmateri.html" class="dropdown-item">
                                 <i class="material-icons">library_books</i> Belajar Bareng
-                            </a>
-                            <a href="listpodcast.html" class="dropdown-item">
-                                <i class="material-icons">video_library</i> Video Podcast
                             </a>
                             <a href="profile-page.html" class="dropdown-item">
                                 <i class="material-icons">live_help</i> Alasan Kita ...
@@ -136,11 +137,41 @@
                         </div>
                     </div>
                     <!-- akhir dari button share -->
+
                     <div class="col-md-3 col-lg-3">
                         <aside class="left-sidebar">
                             <div class="widget">
+
                                 <!-- profil disini -->
-                                <h5 class="widgetheading"><strong>Apriyanto</strong></h5>
+                                <div class="card card-profile card-plain">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card-avatar">
+                                                <a href="#pablo">
+                                                    <img class="img" src="./assets/img/faces/card-profile1-square.jpg">
+                                                </a>
+                                                <div class="ripple-container"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 text-center">
+                                            <h4 class="card-title">Apriyanto</h4>
+                                            <p class="description">Ini adalah update desain v1.2, Lumayan?. Disini saya
+                                                menggunakan package node.js untuk mereduksi duplikat item css, melakukan
+                                                penataan ulang grid dengan mencoba seresponsif mungking, mengatur
+                                                kenyamanan komponen seperti font, container, tata-letak, dan melakukan
+                                                kompresi gzip dan caching. Untuk sekarang akan mempelajari otomasi
+                                                kompresi mime image dengan package node.js atau dengan php.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <button type="button" class="btn btn-primary btn-round">Follow</button>
+                                            <!-- <button type="button" class="btn btn-default pull-right btn-round">Follow</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- akhir dari profil -->
+
                             </div>
                             <div class="widget">
                                 <h5 class="widgetheading">Latest Post</h5>
@@ -170,15 +201,18 @@
                                     <li><a href="#">Development</a></li>
                                 </ul>
                             </div>
+                            <div class="widget"></div>
                         </aside>
                     </div>
+
+                    <!-- isi post -->
                     <div class="col-md-9 col-lg-9">
                         <div class="post-heading">
                             <h3><strong>Di Bawah Ini Nanti Yutub</strong></h3>
                         </div>
 
                         <div class="row">
-                            <!-- pemberian row 2 kali agar si video rapat ke tepi -->
+                            <!-- pemberian row 2 kali agar video rapat ke tepi mobile-->
                             <div class="sesivideo embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item"
                                     src="https://www.youtube.com/embed/MP5QUuLDIAE?color=white" frameborder="0"
@@ -187,11 +221,11 @@
                             </div>
                         </div>
 
-                        <!-- isi disini -->
+                        <!-- isi text disini -->
                         <!-- Tabs with icons on Card -->
                         <div class="isi">
                             <div class="card card-nav-tabs">
-                                <div class="card-header card-header-primary">
+                                <div class="card-header card-header-teal">
                                     <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
                                     <div class="nav-tabs-navigation">
                                         <div class="nav-tabs-wrapper">
@@ -228,25 +262,14 @@
 
                             <p>
                                 Apa yang tampak sepele, tak penting, dan hanya numpang lewat belaka,
-                                bisa jadi
-                                punya cerita dan dampak besar. Salah satunya adalah urusan pemilihan
-                                dan
-                                penataan huruf atau tipografi. Seorang seniman pada era Nazi bahkan
-                                dianggap
-                                sebagai pengkhianat negara gara-gara urusan font. <br>
+                                bisa jadi punya cerita dan dampak besar. Salah satunya adalah urusan pemilihan
+                                dan penataan huruf atau tipografi. Seorang seniman pada era Nazi bahkan
+                                dianggap sebagai pengkhianat negara gara-gara urusan font. <br>
                                 Saat itu, Nazi di bawah Hitler sedang getol-getolnya meluncurkan
-                                segala
-                                bentuk
-                                propaganda lewat media cetak hingga selebaran. Propaganda Nazi
-                                disusun
-                                dengan
-                                huruf warna hitam dan terlihat sangar bernama Blackletter—yang sudah
-                                ada
-                                sejak
-                                akhir abad ke-12. Seiring waktu, Blackletter menjadi identitas
-                                nasional
-                                Jerman
-                                yang wajib digunakan seluruh masyarakat Jerman.
+                                segala bentuk propaganda lewat media cetak hingga selebaran. Propaganda Nazi
+                                disusun dengan huruf warna hitam dan terlihat sangar bernama Blackletter—yang sudah
+                                ada sejak akhir abad ke-12. Seiring waktu, Blackletter menjadi identitas
+                                nasional Jerman yang wajib digunakan seluruh masyarakat Jerman.
                             </p>
                             <blockquote>
                                 <i class="icon-quote-left"></i> Lorem ipsum dolor sit amet, ei quod
@@ -256,29 +279,16 @@
                             </blockquote>
                             <p>
                                 Gencarnya penggunaan Blackletter dan Fraktur—penyempurnaan dari
-                                Blackletter yang
-                                diciptakan Johann Christian Bauer—tidak menghentikan pembuatan
-                                tipografi
-                                lainnya. Kala itu, seorang pemilik bisnis penerbitan dan percetakan
-                                bernama
-                                Jakob Hegner menugaskan seniman Paul Renner untuk menciptakan jenis
-                                huruf baru
-                                bergaya modern. Renner pun mengiyakan. Ia segera mengolah kreasinya
-                                dan
-                                jadilah
-                                font bernama Futura yang geometris, menggabungkan garis lurus dan
-                                lingkaran,
-                                serta mudah dibaca.
-                                <br>
-                                Seketika, Futura memperoleh popularitasnya di tengah masyarakat
-                                Jerman.
-                                Nazi
-                                yang mendengar kabar tersebut langsung mengambil sikap. Aparat
-                                lantas
-                                menciduk
-                                Renner dan melucuti jabatannya di pemerintahan dengan tuduhan
-                                pengkhianat sebab
-                                telah membuat tipografi lain yang dianggap “anti-Jerman.”
+                                Blackletter yang diciptakan Johann Christian Bauer—tidak menghentikan pembuatan
+                                tipografi lainnya. Kala itu, seorang pemilik bisnis penerbitan dan percetakan
+                                bernama Jakob Hegner menugaskan seniman Paul Renner untuk menciptakan jenis
+                                huruf baru bergaya modern. Renner pun mengiyakan. Ia segera mengolah kreasinya
+                                dan jadilah font bernama Futura yang geometris, menggabungkan garis lurus dan
+                                lingkaran, serta mudah dibaca. <br> Seketika, Futura memperoleh popularitasnya di tengah
+                                masyarakat
+                                Jerman. Nazi yang mendengar kabar tersebut langsung mengambil sikap. Aparat
+                                lantas menciduk Renner dan melucuti jabatannya di pemerintahan dengan tuduhan
+                                pengkhianat sebab telah membuat tipografi lain yang dianggap “anti-Jerman.”
                             </p>
                         </div>
 
@@ -289,15 +299,12 @@
                                         src="./assets/img/faces/card-profile4-square.jpg" alt="" /></a>
                                 <div class="media-body">
                                     <div class="media-content">
-                                        <h6><span>March 12, 2013</span> Karen medisson</h6>
+                                        <h6>Karen medisson | <span>March 12, 2013</span></h6>
                                         <p>
                                             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
                                             scelerisque ante sollicitudin commodo. Cras purus odio,
-                                            vestibulum
-                                            in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                            ac
-                                            nisi vulputate fringilla. Donec lacinia congue felis in
-                                            faucibus.
+                                            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                                         </p>
                                         <!-- <a href="#" class="align-right">Reply comment</a> -->
                                     </div>
@@ -308,15 +315,12 @@
                                         src="./assets/img/faces/card-profile2-square.jpg" alt="" /></a>
                                 <div class="media-body">
                                     <div class="media-content">
-                                        <h6><span>March 12, 2013</span> Smith sanderson</h6>
+                                        <h6>Smith sanderson | <span>March 12, 2013</span></h6>
                                         <p>
                                             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
                                             scelerisque ante sollicitudin commodo. Cras purus odio,
-                                            vestibulum
-                                            in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                            ac
-                                            nisi vulputate fringilla. Donec lacinia congue felis in
-                                            faucibus.
+                                            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                                         </p>
                                         <!-- <a href="#" class="align-right">Reply comment</a> -->
                                     </div>
@@ -327,15 +331,12 @@
                                         src="./assets/img/faces/card-profile1-square.jpg" alt="" /></a>
                                 <div class="media-body">
                                     <div class="media-content">
-                                        <h6><span>March 12, 2013</span> Vicky lumora</h6>
+                                        <h6>Vicky lumora | <span>March 12, 2013</span></h6>
                                         <p>
                                             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
                                             scelerisque ante sollicitudin commodo. Cras purus odio,
-                                            vestibulum
-                                            in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                            ac
-                                            nisi vulputate fringilla. Donec lacinia congue felis in
-                                            faucibus.
+                                            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                                         </p>
                                         <!-- <a href="#" class="align-right">Reply comment</a> -->
                                     </div>
@@ -349,11 +350,9 @@
                                         style="box-shadow:none; border:none">
                                     </div>
                                 </div>
-                                <div class="col-lg-4 ml-auto text-center">
-                                    <button class="btn btn-primary btn-raised">
-                                        Send Message
-                                    </button>
-                                </div>
+                                <button class="btn btn-primary btn-raised float-right">
+                                    Send Message
+                                </button>
                             </form>
                             <!-- selesai -->
                         </div>
@@ -368,14 +367,11 @@
 
     </footer>
     <!--   Core JS Files   -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" type="text/javascript"></script>
     <!-- slider card carousel -->
     <script src="./assets/css/dist/owl.carousel.min.js"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-    <script src="./assets/js/plugins/moment.min.js"></script>
-    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="./assets/js/material-kit.min.js?v=2.0.5" type="text/javascript"></script>
 

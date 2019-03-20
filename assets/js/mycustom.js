@@ -31,23 +31,28 @@ $(document).ready(function () {
         // smartphone
         0: {
           items: 1,
-          margin: 30,
-          stagePadding: 15,
-          autoplay: true,
-          autoplayHoverPause: true,
+          stagePadding: 20
         },
         370: {
           items: 1,
           margin: 10,
-          stagePadding: 30,
-          autoplay: true,
-          autoplayHoverPause: true,
+          stagePadding: 40
+        },
+        500: {
+          items: 1,
+          margin: -40,
+          stagePadding: 40
         },
         // tablet
         600: {
           items: 2,
-          margin: 20,
-          stagePadding: 10
+          margin: 150,
+          stagePadding: 20
+        },
+        710: {
+          items: 2,
+          margin: 180,
+          stagePadding: 40
         },
         // ipad pro
         1000: {
