@@ -13511,7 +13511,7 @@ select.form-control {
   box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
 }
 
-/* habis di edit .navbar .dropdown-item:hover di hapus
+/* habis di edit .navbar .dropdown-item:hover di hapus ->
 box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 255, 255, 0.4);
 color: #555;
 */
@@ -14196,6 +14196,11 @@ h6,
 }
 
 html * {
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
@@ -14570,6 +14575,7 @@ h2.title {
   opacity: .5
 }
 
+/* di edit navbar warna */
 .dropdown-menu .dropdown-item,
 .dropdown-menu li>a {
   position: relative;
@@ -14577,7 +14583,8 @@ h2.title {
   display: flex;
   flex-flow: nowrap;
   align-items: center;
-  color: #333;
+  /* color: #333; */
+  color: #000;
   font-weight: normal;
   text-decoration: none;
   font-size: .88rem;
@@ -14611,7 +14618,7 @@ h2.title {
 .dropdown-menu a:focus,
 .dropdown-menu a:active {
   background-color: #2B4D59;
-  color: #FFF
+  color: #fff
 }
 
 .dropdown-toggle.bmd-btn-icon::after,
@@ -15348,7 +15355,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   min-height: 65vh
 }
 
-.page-header .iframe-container iframe {
+.iframe-container iframe {
   width: 100%;
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
 }
@@ -15370,7 +15377,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .header-filter::before {
-  background: rgba(0, 0, 0, 0.6)
+  background: rgba(0, 0, 0, 0.5)
 }
 
 .header-filter .container {
@@ -16743,7 +16750,7 @@ footer .pull-center {
       z-index: 3
   }
   .navbar-collapse .navbar-nav .nav-item .nav-link {
-      color: #3C4858;
+      color: rgb(33, 41, 51);
       margin: 5px 15px
   }
   .navbar-collapse .navbar-nav .nav-item.active .nav-link,

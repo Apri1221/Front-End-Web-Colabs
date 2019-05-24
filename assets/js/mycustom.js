@@ -40,7 +40,7 @@ $(document).ready(function () {
         },
         500: {
           items: 1,
-          margin: -40,
+          margin: -80,
           stagePadding: 40
         },
         // tablet
@@ -78,3 +78,55 @@ $(document).ready(function () {
     });
   });
 });
+
+
+// stop page autoscroll when focused input
+// untuk IOS
+$(document).on('touchstart', 'textarea, input[type=text], input[type=date], input[type=password], input[type=email], input[type=number]', function (e) {
+
+  var intv = 100;
+  var $obj = $(this);
+
+  if (getMobileOperatingSystem() == 'ios') {
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    $obj.css({ 'transform': 'TranslateY(-10000px)' }).focus();
+    setTimeout(function () { $obj.css({ 'transform': 'none' }); }, intv);
+  }
+  return true;
+});
+
+// untuk android
+function onKeyboardOnOff(isOpen) {
+  // Write down your handling code
+  if (isOpen) {
+    // keyboard is open
+    $wrap.css({ opacity: 0 })
+      .find('.content').hide(); // trick the browser thinks the element is relatively top position... 
+    setTimeout(function () {
+      $wrap.css({ opacity: 1 })
+        .find('.content').show();
+    }, 10);
+  }
+}
+
+// animasi button tambahan
+var animateButton = function (e) {
+
+  e.preventDefault();
+  //reset animation
+  e.target.classList.remove('animate');
+
+  e.target.classList.add('animate');
+  setTimeout(function () {
+    e.target.classList.remove('animate');
+  }, 700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+  bubblyButtons[i].addEventListener('click', animateButton, false);
+}

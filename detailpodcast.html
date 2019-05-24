@@ -2,38 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta charset="utf-8">
+    <!-- powerful of meta! -->
+    <!-- chrome -->
+    <meta name="theme-color" content="#9c27b0">
+    <!-- safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>
-        Daftar Materi
-    </title>
+    <title>Daftar Materi</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
         name="viewport" />
     <!-- Fonts and icons -->
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/dist/assets/owl.theme.default.min.css">
+
     <!-- CSS Files -->
-    <link href="./assets/css/material-kit.min.css" rel="stylesheet" />
+    <link href="./assets/css/material-kit.css" rel="stylesheet" />
     <link href="./assets/css/mycustom.css" rel="stylesheet" />
 
-    <style>
-        @media (max-width: 991px) {
-            .video {
-                padding: 12px 10px 0px;
-            }
-        }
-    </style>
-
     <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/balloon/ckeditor.js"></script>
+
     <!-- menghindari injeksi ads telkom -->
     <!-- </head> -->
 </head>
 
 <body class="index-page sidebar-collapse">
-    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="10"
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="0"
         id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
@@ -92,22 +93,13 @@
     </nav>
     <!-- asyncImage ini berguna untuk meload page dengan sempurna, gambar menyusul -->
     <div class="page-header header-filter asyncImage" data-parallax="true"
-        style="background-image: url('./assets/img/bg4.jpg'); height: 50vh;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="brand">
-                        <h1>Asshiiap Kurose</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+        style="background-image: url('./assets/img/bg6.jpg'); height: 50vh;">
     </div>
-    <div class="container video">
+    <div class="container">
         <div class="row">
-            <div class="sesivideo embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9hRykEi5Usw?color=white"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            <div class="sesivideo podcast embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dJV8jS4exx4" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
@@ -117,57 +109,106 @@
     <div class="main main-raised">
         <div class="section section-basic">
             <div class="container">
+                <div class="text-center">
+                    <h2>Malam minggu siapa</h2>
+                    <div class="description ">
+                        <h5>24 Mei 2019</h5>
+                    </div>
+                </div>
+                
+                <div class="space-0 solidline"></div>
+
                 <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
-                        <!-- Fungsi share button, all icons credit to flaticon.com -->
-                        <div id="container-floating">
-                            <div class="nd5 nds" data-toggle="tooltip" data-placement="left"
-                                data-original-title="Via Email">
-                                <a target="_blank"
-                                    href="mailto:?Subject=Coba lihat situs ini&amp;Body=Situs%20ini%20masih%20tahap%20uji%20coba.%20 https://www.inseed.web.id">
-                                    <img class="reminder" src="./assets/img/icon/google-plus.svg" alt="Email" />
-                                </a>
-                            </div>
-                            <div class="nd4 nds" data-toggle="tooltip" data-placement="left"
-                                data-original-title="Via Line">
-                                <a target="_blank"
-                                    href="https://social-plugins.line.me/lineit/share?url=https://www.inseed.web.id">
-                                    <img class="reminder rounded-circle" src="./assets/img/icon/line.svg" alt="Line" />
-                                </a>
-                            </div>
 
-                            <div class="nd3 nds" data-toggle="tooltip" data-placement="left"
-                                data-original-title="Via Facebook">
-                                <a target="_blank"
-                                    href="http://www.facebook.com/sharer.php?u=https://www.inseed.web.id">
-                                    <img class="reminder rounded-circle" src="./assets/img/icon/facebook.svg"
-                                        alt="Facebook" />
-                                </a>
-                            </div>
-
-                            <div class="nd1 nds" data-toggle="tooltip" data-placement="left"
-                                data-original-title="Via Twitter">
-                                <a target="_blank"
-                                    href="https://twitter.com/share?url=https://www.inseed.web.id&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons">
-                                    <img class="reminder rounded-circle" src="./assets/img/icon/twitter.svg"
-                                        alt="Twitter" />
-                                </a>
-                            </div>
-
-                            <div id="floating-button" data-toggle="tooltip" data-placement="left">
-                                <p class="plus"><i class="material-icons">share</i></p>
-                                <!-- https://www.flaticon.com/free-icon/favorite-heart-button_60993 -->
-                                <img class="edit" style="height:25px"
-                                    src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMCA1MTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMCA1MTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48Zz4KCTxnIGlkPSJmYXZvcml0ZSI+CgkJPHBhdGggZD0iTTI1NSw0ODkuNmwtMzUuNy0zNS43Qzg2LjcsMzM2LjYsMCwyNTcuNTUsMCwxNjAuNjVDMCw4MS42LDYxLjIsMjAuNCwxNDAuMjUsMjAuNGM0My4zNSwwLDg2LjcsMjAuNCwxMTQuNzUsNTMuNTUgICAgQzI4My4wNSw0MC44LDMyNi40LDIwLjQsMzY5Ljc1LDIwLjRDNDQ4LjgsMjAuNCw1MTAsODEuNiw1MTAsMTYwLjY1YzAsOTYuOS04Ni43LDE3NS45NS0yMTkuMywyOTMuMjVMMjU1LDQ4OS42eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI0Y3RjdGNyI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
-                            </div>
+                    <!-- Fungsi share button, all icons credit to flaticon.com -->
+                    <div id="container-floating">
+                        <div class="nd5 nds" data-toggle="tooltip" data-placement="left"
+                            data-original-title="Via Email">
+                            <a target="_blank"
+                                href="mailto:?Subject=Coba lihat situs ini&amp;Body=Situs%20ini%20masih%20tahap%20uji%20coba.%20 https://www.inseed.web.id">
+                                <img class="reminder" src="./assets/img/icon/google-plus.svg" alt="Email" />
+                            </a>
                         </div>
-                        <!-- akhir dari button share -->
-                        <div class="description text-center">
-                            <p style="color:black">Coba - coba mengerjakan sesuatu yang bermanfaat, tanpa pamrih,
-                                tidak
-                                sedang
-                                mengikuti lomba, tidak commercial, dan sebagainya.</p>
+                        <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="Via Line">
+                            <a target="_blank"
+                                href="https://social-plugins.line.me/lineit/share?url=https://www.inseed.web.id">
+                                <img class="reminder rounded-circle" src="./assets/img/icon/line.svg" alt="Line" />
+                            </a>
                         </div>
+
+                        <div class="nd3 nds" data-toggle="tooltip" data-placement="left"
+                            data-original-title="Via Facebook">
+                            <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://www.inseed.web.id">
+                                <img class="reminder rounded-circle" src="./assets/img/icon/facebook.svg"
+                                    alt="Facebook" />
+                            </a>
+                        </div>
+
+                        <div class="nd1 nds" data-toggle="tooltip" data-placement="left"
+                            data-original-title="Via Twitter">
+                            <a target="_blank"
+                                href="https://twitter.com/share?url=https://www.inseed.web.id&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons">
+                                <img class="reminder rounded-circle" src="./assets/img/icon/twitter.svg"
+                                    alt="Twitter" />
+                            </a>
+                        </div>
+
+                        <div id="floating-button" data-toggle="tooltip" data-placement="left">
+                            <p class="plus"><i class="material-icons">share</i></p>
+                            <!-- https://www.flaticon.com/free-icon/favorite-heart-button_60993 -->
+                            <img class="edit" style="height:25px"
+                                src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMCA1MTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMCA1MTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48Zz4KCTxnIGlkPSJmYXZvcml0ZSI+CgkJPHBhdGggZD0iTTI1NSw0ODkuNmwtMzUuNy0zNS43Qzg2LjcsMzM2LjYsMCwyNTcuNTUsMCwxNjAuNjVDMCw4MS42LDYxLjIsMjAuNCwxNDAuMjUsMjAuNGM0My4zNSwwLDg2LjcsMjAuNCwxMTQuNzUsNTMuNTUgICAgQzI4My4wNSw0MC44LDMyNi40LDIwLjQsMzY5Ljc1LDIwLjRDNDQ4LjgsMjAuNCw1MTAsODEuNiw1MTAsMTYwLjY1YzAsOTYuOS04Ni43LDE3NS45NS0yMTkuMywyOTMuMjVMMjU1LDQ4OS42eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI0Y3RjdGNyI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                        </div>
+                    </div>
+                    <!-- akhir dari button share -->
+
+                    <div class="col-md-4 col-lg-4">
+                        <aside class="left-sidebar">
+                            <div class="widget">
+
+                                <!-- profil disini -->
+                                <div class="card card-profile card-plain">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card-avatar">
+                                                <a href="#pablo">
+                                                    <img class="img" src="./assets/img/faces/card-profile1-square.jpg">
+                                                </a>
+                                                <div class="ripple-container"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 text-center">
+                                            <h4 class="card-title">Apriyanto</h4>
+                                            <p class="description">Hello World!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <button type="button" class="btn btn-primary btn-round">Follow</button>
+                                            <!-- <button type="button" class="btn btn-default pull-right btn-round">Follow</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- akhir dari profil -->
+
+                            </div>
+                            <div class="widget">
+                                <h5 class="widgetheading">Popular tags</h5>
+                                <ul class="tags">
+                                    <li><a href="#">Web design</a></li>
+                                    <li><a href="#">Trends</a></li>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Internet</a></li>
+                                    <li><a href="#">Tutorial</a></li>
+                                    <li><a href="#">Development</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget"></div>
+                        </aside>
+                    </div>
+
+                    <!-- isi komentar -->
+                    <div class="col-md-8 col-lg-8">
 
                         <div class="comment-area">
                             <h4>4 Komentar</h4>
@@ -177,13 +218,11 @@
                                 <div class="media-body">
                                     <div class="media-content">
                                         <h6>Karen medisson | <span>March 12, 2013</span></h6>
-                                        <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                        <p>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
                                             scelerisque ante sollicitudin commodo. Cras purus odio,
-                                            vestibulum
-                                            in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                            ac
-                                            nisi vulputate fringilla. Donec lacinia congue felis in
-                                            faucibus.
+                                            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                                         </p>
                                         <!-- <a href="#" class="align-right">Reply comment</a> -->
                                     </div>
@@ -198,9 +237,8 @@
                                         <p>
                                             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
                                             scelerisque ante sollicitudin commodo. Cras purus odio,
-                                            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                            ac nisi vulputate fringilla. Donec lacinia congue felis in
-                                            faucibus.
+                                            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                                         </p>
                                         <!-- <a href="#" class="align-right">Reply comment</a> -->
                                     </div>
@@ -215,9 +253,8 @@
                                         <p>
                                             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
                                             scelerisque ante sollicitudin commodo. Cras purus odio,
-                                            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                            ac nisi vulputate fringilla. Donec lacinia congue felis in
-                                            faucibus.
+                                            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                                            nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                                         </p>
                                         <!-- <a href="#" class="align-right">Reply comment</a> -->
                                     </div>

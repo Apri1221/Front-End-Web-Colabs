@@ -28,7 +28,7 @@
 </head>
 
 <body class="index-page sidebar-collapse">
-    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="10"
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="0"
         id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
@@ -87,13 +87,14 @@
     </nav>
 
     <!-- Carousel Card -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-parallax="true">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false"
+        data-parallax="true">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="page-header header-filter" style="background-image: url('./assets/img/bg6.jpg');">
+                <div class="page-header header-filter" style="background-image: url('./assets/img/bg.jpg');">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 ml-auto mr-auto text-center">
+                            <div class="col-md-6 ml-auto mr-auto text-center">
                                 <h1 class="title">Pengumuman</h1>
                                 <h4>Tunggu sebentar lagi yaaa, kak Apri masih ngerjain webnya. <br>Kak Apri lama
                                     banget ih, jelek lagi webnya.</h4>
@@ -145,7 +146,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!-- End Carousel Card -->
+    <!-- End Carousel header -->
 
     <div class="main main-raised">
         <div class="section section-basic">
@@ -155,21 +156,21 @@
                 </div>
 
                 <!-- inputs -->
-                <div id="inputs">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                            <i class="material-icons">search</i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Belum Bisa...">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mr-auto">
+                        <!-- <div class="form-group"> default -->
+                        <div class="form-group has-danger">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">search</i>
+                                    </span>
                                 </div>
+                                <input type="text" class="form-control" placeholder="Belum Bisa...">
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <!-- end inputs -->
 
@@ -206,7 +207,7 @@
                                     </a>, 2 days ago
                                 </p>
                                 <div class="col-md-4 ml-auto text-center">
-                                    <a href="#" class="btn btn-danger">Tonton</a>
+                                    <button class="bubbly-button" onclick="location.href='http://inseed.web.id';">TONTON</button>
                                 </div>
 
                             </div>
