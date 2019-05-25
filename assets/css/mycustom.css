@@ -388,9 +388,11 @@ aside {
 
 @media all and (max-width: 800px) {
   .left-sidebar {
+    padding: 0px;
     border-right: none
   }
   .right-sidebar {
+    padding: 0px;
     border-left: none
   }
   .isi {
