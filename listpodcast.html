@@ -2,25 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta charset="utf-8">
+    <!-- powerful of meta! -->
+    <!-- chrome -->
+    <meta name="theme-color" content="#9c27b0">
+    <!-- safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>
-        Daftar Materi
-    </title>
+    <title>Daftar Materi</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
         name="viewport" />
     <!-- Fonts and icons -->
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <!-- CSS Files -->
-    <link href="./assets/css/material-kit.min.css" rel="stylesheet" />
-    <link href="./assets/css/mycustom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="./assets/css/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/dist/assets/owl.theme.default.min.css">
+
+    <!-- CSS Files -->
+    <link href="./assets/css/material-kit.css" rel="stylesheet" />
+    <link href="./assets/css/mycustom.css" rel="stylesheet" />
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/balloon/ckeditor.js"></script>
 
     <!-- menghindari injeksi ads telkom -->
     <!-- </head> -->
@@ -55,23 +62,13 @@
                             <a href="listpodcast.html" class="dropdown-item">
                                 <i class="material-icons">video_library</i> Insight
                             </a>
-                            <a href="listmateri.html" class="dropdown-item">
-                                <i class="material-icons">library_books</i> Belajar Bareng
+                            <a href="about.html" class="dropdown-item">
+                                <i class="material-icons">live_help</i> Tentang CoLabs
                             </a>
-                            <a href="profile-page.html" class="dropdown-item">
-                                <i class="material-icons">live_help</i> Alasan Kita ...
-                            </a>
-                            <a href="login-page.html" class="dropdown-item">
+                            <!-- <a href="login-page.html" class="dropdown-item">
                                 <i class="material-icons">security</i> Masuk
-                            </a>
+                            </a> -->
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
-                            href="https://twitter.com/apri0498" target="_blank"
-                            data-original-title="Follow us on Twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
@@ -80,50 +77,107 @@
                             <i class="fa fa-instagram"></i>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://youtube.com"
+                            target="_blank" data-original-title="Follow us on Youtube">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="page-header header-filter asyncImage" data-parallax="true"
-        style="background-image: url('./assets/img/bg5.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="brand">
-                        <h1>KEJAR</h1>
-                        <h3>Kelompok Belajar</h3>
+
+
+    <!-- Carousel Card -->
+    <div id="carouselExampleIndicators" class="carousel slide page-header" data-ride="carousel" data-interval="false"
+        data-parallax="true">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="page-header header-filter" style="background-image: url('./assets/img/bg.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 ml-auto mr-auto text-center">
+                                <h1 class="title">Pengumuman</h1>
+                                <h4>Tunggu sebentar lagi yaaa, kak Apri masih ngerjain webnya. <br>Kak Apri lama
+                                    banget ih, jelek lagi webnya.</h4>
+                                <br>
+                                <h6>Tapi kamu bisa fallaw kak Apri di:</h6>
+                                <div class="buttons">
+                                    <a href="twitter.com/apri0498" class="btn btn-just-icon btn-white btn-link btn-lg">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/apriyanto.tobing"
+                                        class="btn btn-just-icon btn-white btn-link btn-lg">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                    <a href="instagram.com/aprijplt"
+                                        class="btn btn-just-icon btn-white btn-link btn-lg">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="page-header header-filter" style="background-image: url('./assets/img/bg3.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 ml-auto text-right">
+                                <h1 class="title">Promo 50% Off</h1>
+                                <h4>Beli akun premium sekarang, lihat beberapa fitur yang bakal kamu dapatkan</h4>
+                                <br>
+                                <div class="buttons">
+                                    <a href="#pablo" class="btn btn-danger btn-lg">
+                                        <i class="material-icons">shopping_cart</i> Lihat dan Beli
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <i class="material-icons">keyboard_arrow_left</i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <i class="material-icons">keyboard_arrow_right</i>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+    <!-- End Carousel header -->
+
     <div class="main main-raised">
         <div class="section section-basic">
             <div class="container ">
                 <div class="title">
                     <h2>List Video Podcast</h2>
                 </div>
-                <a href="listpodcastv2.html" class="btn btn-info">Coba Listpodcast Versi 2</a>
-                <div class="space-10"></div>
-                <!--                 inputs -->
-                <div id="inputs">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                            <i class="material-icons">search</i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Belum Bisa...">
+
+                <!-- inputs -->
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mr-auto">
+                        <!-- <div class="form-group"> default -->
+                        <div class="form-group has-danger">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">search</i>
+                                    </span>
                                 </div>
+                                <input type="text" class="form-control" placeholder="Belum Bisa...">
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <!-- end inputs -->
 
+                <!-- blogs -->
                 <h2 class="title title-section text-center">Paling Trending Minggu Ini</h2>
                 <div class="col-md-10 ml-auto mr-auto">
                     <div class="card card-plain card-blog">
@@ -156,7 +210,8 @@
                                     </a>, 2 days ago
                                 </p>
                                 <div class="col-md-4 ml-auto text-center">
-                                    <button class="bubbly-button" onclick="location.href='http://inseed.web.id';">TONTON</button>
+                                    <button class="bubbly-button"
+                                        onclick="location.href='http://inseed.web.id';">TONTON</button>
                                 </div>
 
                             </div>
@@ -166,78 +221,145 @@
 
                 <!-- akhir dari blog -->
 
-                <div class="space-50"></div>
+                <div class="space-50 dashedline"></div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card box">
+                <!-- mulai carousel card content - using owlcarousel with modification -->
+                <div class="main-content">
+                    <h3 class="title text-center">Ngopitech</h3>
+                    <div class="owl-carousel owl-theme">
+                        <div class="card box widthbox">
                             <!-- Gambar ini digenerate dari thumbnail youtube, sesuaikan ID Video maka jadi dinamis -->
                             <!-- https://img.youtube.com/vi/<insert-youtube-video-id-here>/hqdefault.jpg -->
                             <img class="card-img-top" src="https://img.youtube.com/vi/9hRykEi5Usw/hqdefault.jpg"
                                 alt="Card image cap">
-                            <div class="card-body ">
-                                <h6 class="card-category text-danger">
-                                    <i class="material-icons">trending_up</i> Trending &#xB7;
-                                    <span> - 342 x dilihat </span>
-                                </h6>
-                                <h4 class="card-title">
-                                    <a href="#pablo">To Grow Your Business Start Focusing on Your Employees</a>
-                                </h4>
+                            <div class="card-body">
+                                <h5 class="card-title">Makan daging anjing</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">04 Maret 2019</h6>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                             </div>
-                            <div class="card-footer ">
-                                <div class="author">
-                                    <a href="#pablo">
-                                        <img src="./assets/img/faces/christian.jpg" alt="..." class="avatar img-raised">
-                                        <span>Lord Alex</span>
-                                    </a>
-                                </div>
-                                <div class="stats ml-auto">
-                                    <a href="detailmateri.html" class="btn btn-danger"
-                                        style="box-shadow:none">Tonton</a>
-                                </div>
+                            <div class="card-footer">
+                                <a href="detailpodcast.html" class="btn btn-danger" style="box-shadow:none">Tonton</a>
+                            </div>
+                        </div>
+                        <div class="card box widthbox">
+                            <img class="card-img-top" src="https://img.youtube.com/vi/MP5QUuLDIAE/hqdefault.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">04 Maret 2019</h6>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="detailpodcast.html" class="btn btn-danger" style="box-shadow:none">Tonton</a>
+                            </div>
+                        </div>
+                        <div class="card box widthbox">
+                            <img class="card-img-top" src="https://img.youtube.com/vi/ASQCejY-p4I/hqdefault.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">04 Maret 2019</h6>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger" style="box-shadow:none">Tonton</a>
+                            </div>
+                        </div>
+                        <div class="card box widthbox">
+                            <img class="card-img-top" src="https://img.youtube.com/vi/MP5QUuLDIAE/hqdefault.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">04 Maret 2019</h6>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger" style="box-shadow:none">Tonton</a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="card box">
-                            <!-- Gambar ini digenerate dari thumbnail youtube, sesuaikan ID Video maka jadi dinamis -->
-                            <!-- https://img.youtube.com/vi/<insert-youtube-video-id-here>/hqdefault.jpg -->
-                            <img class="card-img-top" src="https://img.youtube.com/vi/MP5QUuLDIAE/hqdefault.jpg"
-                                alt="Card image cap">
-                            <div class="card-body ">
-                                <h6 class="card-category text-danger">
-                                    <i class="material-icons">trending_up</i> Trending &#xB7;
-                                    <span> - 342 x dilihat </span>
-                                </h6>
-                                <h4 class="card-title">
-                                    <a href="#pablo">To Grow Your Business Start Focusing on Your Employees</a>
-                                </h4>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer ">
-                                <div class="author">
-                                    <a href="#pablo">
-                                        <img src="./assets/img/faces/christian.jpg" alt="..." class="avatar img-raised">
-                                        <span>Lord Alex</span>
-                                    </a>
-                                </div>
-                                <div class="stats ml-auto">
-                                    <a href="detailmateri.html" class="btn btn-danger"
-                                        style="box-shadow:none">Tonton</a>
-                                </div>
-                            </div>
+                    <!-- untuk card carousel -- spesifik untuk navigasi custom
+                    dokumentasi : https://stackoverflow.com/questions/31224192/owl-carousel-making-custom-navigation -->
+                    <div class="owl-theme">
+                        <div class="owl-controls">
+                            <div class="owl-nav"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- akhir dari kumpulan card -->
-
-                <div class="space-50"></div>
-
+                <div class="main-content">
+                    <h3 class="title text-center">Masyarakat</h3>
+                    <div class="owl-carousel owl-theme div_main">
+                        <div class="card box widthbox">
+                            <!-- Gambar ini digenerate dari thumbnail youtube, sesuaikan ID Video maka jadi dinamis -->
+                            <!-- https://img.youtube.com/vi/<insert-youtube-video-id-here>/hqdefault.jpg -->
+                            <img class="card-img-top" src="https://img.youtube.com/vi/9hRykEi5Usw/hqdefault.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Makan daging anjing</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">04 Maret 2019</h6>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="detailpodcast.html" class="btn btn-danger" style="box-shadow:none">Tonton</a>
+                            </div>
+                        </div>
+                        <div class="card box widthbox">
+                            <img class="card-img-top" src="https://img.youtube.com/vi/MP5QUuLDIAE/hqdefault.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">04 Maret 2019</h6>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="detailmateri.html" class="btn btn-danger" style="box-shadow:none">Tonton</a>
+                            </div>
+                        </div>
+                        <div class="card box widthbox">
+                            <img class="card-img-top" src="https://img.youtube.com/vi/ASQCejY-p4I/hqdefault.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">04 Maret 2019</h6>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger" style="box-shadow:none">Tonton</a>
+                            </div>
+                        </div>
+                        <div class="card box widthbox">
+                            <img class="card-img-top" src="https://img.youtube.com/vi/MP5QUuLDIAE/hqdefault.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">04 Maret 2019</h6>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger" style="box-shadow:none">Tonton</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- untuk card carousel -- spesifik untuk navigasi custom -->
+                    <div class="owl-theme">
+                        <div class="owl-controls">
+                            <div class="owl-nav"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

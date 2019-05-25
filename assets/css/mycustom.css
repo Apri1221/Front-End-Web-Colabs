@@ -110,12 +110,11 @@ section.callaction {
 /* --- blockquote --- */
 
 blockquote {
-  font-size: 16px;
+  font-size: 1.2rem !important;
   font-weight: 400;
   font-family: 'Noto Serif', serif;
   font-style: italic;
-  padding-left: 0;
-  color: #a2a2a2;
+  color: coral;
   line-height: 1.6em;
   border: none
 }
@@ -167,7 +166,7 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
 /* di edit */
 
 .isi {
-  padding: 3rem 5rem 1rem
+  padding: 1rem 5rem
 }
 
 .post-heading h3 a {
@@ -312,7 +311,6 @@ ul.meta-post li a {
 
 /* --- Comment --- */
 
-
 .comment-area {
   float: left;
   width: 100%;
@@ -372,18 +370,18 @@ aside {
 .right-sidebar {
   border-left: 1px solid #e9e9e9;
   /* padding: 0 0 0 30px; */
-  padding: 0 10px 0 0;
-  -webkit-box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01);
-  box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01)
+  padding: 0 0 0 30px;
+  /* -webkit-box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01);
+  box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01) */
 }
 
 /* di edit */
 
 .left-sidebar {
   border-right: 1px solid #e9e9e9;
-  padding: 0 10px 0 0;
-  -webkit-box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01);
-  box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01)
+  padding: 0 15px 0 0;
+  /* -webkit-box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01);
+  box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01) */
 }
 
 /* kebutuhan post */
@@ -629,15 +627,24 @@ article img.pull-right, article .align-right {
 /* ukuran video */
 
 .sesivideo {
-  max-width: 49rem;
+  max-width: 50rem;
   display: table;
   margin: 20px auto 0;
   height: auto
 }
 
 .podcast {
-  margin: -60px auto 0;
+  margin: -120px auto -60px !important;
+  background: #FFF;
+  position: relative;
+  z-index: 3;
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
+}
+
+@media (max-width: 991px) {
+  .podcast {
+    margin: -120px auto !important;
+  }
 }
 
 /* Team Section
@@ -949,7 +956,6 @@ article img.pull-right, article .align-right {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease-in-out 0s;
-  
   border-bottom-style: solid;
   border-bottom-color: lightblue;
   border-bottom-width: 5px
@@ -1197,13 +1203,15 @@ article img.pull-right, article .align-right {
 }
 
 /* modifikasi header index.html (halaman utama) jika ada di mobile, buat auto tingginya */
+
 /* kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
+
 @media screen and (max-width: 580px) {
   .header-video {
-    height: auto !important /* vh jika tidak pada mobile */
+    height: auto !important/* vh jika tidak pada mobile */
   }
-
   .row-video {
-    margin-top:50px; margin-bottom:100px
+    margin-top: 50px;
+    margin-bottom: 100px
   }
 }
