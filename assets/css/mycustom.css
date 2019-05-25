@@ -390,6 +390,9 @@ aside {
   .left-sidebar {
     border-right: none
   }
+  .right-sidebar {
+    border-left: none
+  }
   .isi {
     padding: 2rem 3rem 1rem
   }
