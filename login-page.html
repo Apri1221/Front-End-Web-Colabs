@@ -2,36 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <meta charset="utf-8">
+  <!-- powerful of meta! -->
+  <!-- chrome -->
+  <meta name="theme-color" content="#9c27b0">
+  <!-- safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Daftar Materi
-  </title>
+  <title>Daftar Materi</title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
     name="viewport" />
   <!-- Fonts and icons -->
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="./assets/css/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/dist/assets/owl.theme.default.min.css">
+
   <!-- CSS Files -->
-  <!-- CSS Files -->
-  <link href="./assets/css/material-kit.min.css" rel="stylesheet" />
+  <link href="./assets/css/material-kit.css" rel="stylesheet" />
   <link href="./assets/css/mycustom.css" rel="stylesheet" />
+
+  <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/balloon/ckeditor.js"></script>
 
   <!-- menghindari injeksi ads telkom -->
   <!-- </head> -->
 </head>
 
 <body class="login-page sidebar-collapse">
-  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="0"
+  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="50"
     id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://inseed.web.id">
-          Kurang Ajar
-        </a>
+        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+          Material Kit </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -53,22 +61,13 @@
               <a href="listpodcast.html" class="dropdown-item">
                 <i class="material-icons">video_library</i> Insight
               </a>
-              <a href="listmateri.html" class="dropdown-item">
-                <i class="material-icons">library_books</i> Belajar Bareng
+              <a href="about.html" class="dropdown-item">
+                <i class="material-icons">live_help</i> Tentang CoLabs
               </a>
-              <a href="profile-page.html" class="dropdown-item">
-                <i class="material-icons">live_help</i> Alasan Kita ...
-              </a>
-              <a href="login-page.html" class="dropdown-item">
-                <i class="material-icons">security</i> Masuk
-              </a>
+              <!-- <a href="login-page.html" class="dropdown-item">
+                  <i class="material-icons">security</i> Masuk
+              </a> -->
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/apri0498"
-              target="_blank" data-original-title="Follow us on Twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/apri0498"
@@ -76,29 +75,32 @@
               <i class="fa fa-instagram"></i>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://youtube.com"
+              target="_blank" data-original-title="Follow us on Youtube">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+  
   <div class="page-header header-filter asyncImage"
-    style="background-image: url('./assets/img/bg7.jpg'); background-size: cover; background-position: top center;">
+    style="background-image: url('./assets/img/bg6.jpg'); background-size: cover; background-position: top center;">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 ml-auto mr-auto" style="padding-top:5%;">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto" style="padding-top:10%;">
           <div class="card card-login">
+
+            <!-- form nya disini -->
             <form class="form" method="" action="">
+
               <!-- di edit -->
-              <div class="card-header card-header-teal text-center">
-                <div id="circle_container">
-                  <div id="stars"></div>
-                  <div id="load_wrapper">
-                    <div id="sun"></div>
-                    <div id="moon"></div>
-                  </div>
-                </div>
-                <h3 class="card-title">Login</h3>
+              <div class="card-header card-header-primary text-center">
+                <h3 class="card-title">Masuk</h3>
               </div>
-              <p class="description text-center">Daftar yang benar yaa</p>
+              <p class="description text-center">Silahkan isi dengan benar</p>
               <div class="card-body">
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -106,15 +108,7 @@
                       <i class="material-icons">face</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" placeholder="First Name...">
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">mail</i>
-                    </span>
-                  </div>
-                  <input type="email" class="form-control" placeholder="Email...">
+                  <input type="text" class="form-control" placeholder="Username">
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -122,13 +116,15 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" placeholder="Password...">
+                  <input type="password" class="form-control" placeholder="Password">
                 </div>
               </div>
               <div class="footer text-center">
                 <a href="" class="btn btn-primary btn-lg">Submit</a>
               </div>
             </form>
+            <!-- akhir dari form -->
+
           </div>
         </div>
       </div>

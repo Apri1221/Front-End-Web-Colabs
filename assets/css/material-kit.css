@@ -3882,7 +3882,7 @@ tbody.collapse.show {
   border-radius: 3px;
   padding: 0.625rem 0;
   margin-bottom: 20px;
-  color: #2B4D59;
+  /* color: #2B4D59; */
   background-color: #fff!important;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28), 0 5px 8px -5px rgba(0, 0, 0, 0.15)
 }
@@ -15870,7 +15870,7 @@ footer .pull-center {
 }
 
 .card-login .form {
-  min-height: 420px
+  min-height: auto
 }
 
 .card-login .social-line {
@@ -15885,9 +15885,11 @@ footer .pull-center {
   margin-right: 5px
 }
 
+/* di edit, di tambah bagian margin */
 .login-page .footer {
-  position: absolute;
+  position: relative;
   width: 100%;
+  margin: 40px 0 10px;
   background: transparent;
   bottom: 0;
   color: #fff;

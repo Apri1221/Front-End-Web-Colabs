@@ -1220,3 +1220,7 @@ article img.pull-right, article .align-right {
     margin-bottom: 100px
   }
 }
+
+.collapsible {
+  font-size: 16px
+}

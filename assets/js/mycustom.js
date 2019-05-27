@@ -22,6 +22,7 @@
 /* dibuat dengan cinta oleh apri */
 /* dokumentasi : https://stackoverflow.com/questions/31224192/owl-carousel-making-custom-navigation */
 $(document).ready(function () {
+  
   $('.owl-carousel').each(function () {
     $(this).owlCarousel({
       loop: false,
