@@ -92,19 +92,6 @@
         style="background-image: url('./assets/img/bg6.jpg'); height: 50vh;">
     </div>
 
-    <!-- isi video postingan -->
-    <div class="container">
-        <div class="section">
-            <div class="sesivideo podcast embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MP5QUuLDIAE" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-    <div class="space-100"></div>
-
     <div class="main main-raised">
         <div class="section section-basic">
             <div class="container">
@@ -116,7 +103,6 @@
                 </div>
 
                 <div class="space-0 solidline"></div>
-
                 <div class="row">
 
                     <!-- Fungsi share button, all icons credit to flaticon.com -->
@@ -161,9 +147,19 @@
                     </div>
                     <!-- akhir dari button share -->
 
+
                     <!-- isi postingan -->
+                    
                     <div class="col-md-8 col-lg-8">
 
+                        <div class="sesivideo embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MP5QUuLDIAE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="space-50"></div>
                         <!-- isi text disini -->
                         <div class="isi">
 
@@ -189,57 +185,11 @@
                         <!-- spasi -->
                         <div class="space-10"></div>
 
-                        <div class="comment-area">
-                            <h4>Kamu ada saran untuk konten berikutnya?</h4>
-                            <!-- You can use a div tag as well as textarea. textarea ngebug -->
-                            <form class="contact-form" method="POST">
-                                <div class="form-group">
-                                    <div class="form-control" id="editor" name="editor"
-                                        style="box-shadow:none; border:none">
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary btn-raised float-right">
-                                    Send Message
-                                </button>
-                            </form>
-                            <!-- selesai -->
-                        </div>
                     </div>
 
                     <!-- isi dari widget sidebar -->
                     <div class="col-md-4 col-lg-4">
                         <aside class="right-sidebar">
-                            <div class="widget">
-
-                                <!-- profil disini -->
-                                <div class="card card-profile card-plain">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="card-avatar">
-                                                <a href="#pablo">
-                                                    <img class="img" src="./assets/img/faces/card-profile1-square.jpg">
-                                                </a>
-                                                <div class="ripple-container"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-12 text-center">
-                                            <h4 class="card-title">Apriyanto</h4>
-                                            <p class="description">Hello World!
-                                            </p>
-                                        </div>
-                                        <div class="col-md-12 text-center">
-                                            <button type="button" class="btn btn-primary btn-round">Follow</button>
-                                            <!-- <button type="button" class="btn btn-default pull-right btn-round">Follow</button> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- akhir dari profil -->
-
-                            </div>
-
-                            <div class="space-10"></div>
-
                             <div class="widget">
                                 <!-- referensi disini -->
                                 <div class="card card-nav-tabs">
@@ -250,7 +200,7 @@
                                                 <ul class="nav nav-tabs" data-tabs="tabs">
                                                     <li class="nav-item">
                                                         <a class="nav-link active" href="#add" data-toggle="tab">
-                                                            <i class="material-icons">code</i> Tambahan
+                                                            <i class="material-icons">code</i> Tautan
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -290,6 +240,20 @@
                                 </ul>
                             </div>
                             <div class="widget"></div>
+
+                            <h4>Kamu ada saran untuk konten berikutnya?</h4>
+                            <!-- You can use a div tag as well as textarea. textarea ngebug -->
+                            <form class="contact-form" method="POST">
+                                <div class="form-group">
+                                    <div class="form-control" id="editor" name="editor"
+                                        style="box-shadow:none; border:none">
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary btn-raised float-right">
+                                    Send Message
+                                </button>
+                            </form>
+                            <!-- selesai -->
                         </aside>
                     </div>
 
