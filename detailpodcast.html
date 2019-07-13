@@ -65,9 +65,12 @@
                             <a href="about.html" class="dropdown-item">
                                 <i class="material-icons">live_help</i> Tentang CoLabs
                             </a>
-                            <!-- <a href="login-page.html" class="dropdown-item">
+                            <a href="login-page.html" class="dropdown-item">
                                 <i class="material-icons">security</i> Masuk
-                            </a> -->
+                            </a>
+                            <a href="dashboard.html" class="dropdown-item">
+                                <i class="material-icons">dashboard</i> Dashboard
+                            </a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -87,6 +90,7 @@
             </div>
         </div>
     </nav>
+
     <!-- asyncImage ini berguna untuk meload page dengan sempurna, gambar menyusul -->
     <div class="page-header header-filter asyncImage" data-parallax="true"
         style="background-image: url('./assets/img/bg6.jpg'); height: 50vh;">
@@ -103,6 +107,7 @@
                 </div>
 
                 <div class="space-0 solidline"></div>
+
                 <div class="row">
 
                     <!-- Fungsi share button, all icons credit to flaticon.com -->
@@ -139,6 +144,7 @@
                         </div>
 
                         <div id="floating-button" data-toggle="tooltip" data-placement="left">
+                            <div class="behind"></div>
                             <p class="plus"><i class="material-icons">share</i></p>
                             <!-- https://www.flaticon.com/free-icon/favorite-heart-button_60993 -->
                             <img class="edit" style="height:25px"
@@ -148,21 +154,27 @@
                     <!-- akhir dari button share -->
 
 
+
                     <!-- isi postingan -->
-                    
                     <div class="col-md-8 col-lg-8">
 
-                        <div class="sesivideo embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MP5QUuLDIAE"
+                        <!-- disini video -->
+                        <!-- <div class="sesivideo embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.youtube.com/embed/xO51BDBhPWw"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
+                        </div> -->
+
+                        <div class="iframe-container">
+                            <iframe src="//www.youtube.com/embed/xO51BDBhPWw" allowfullscreen></iframe>
                         </div>
 
                         <div class="space-50"></div>
+
+
                         <!-- isi text disini -->
                         <div class="isi">
-
                             <p>
                                 Apa yang tampak sepele, tak penting, dan hanya numpang lewat belaka,
                                 bisa jadi punya cerita dan dampak besar. Salah satunya adalah urusan pemilihan
@@ -292,6 +304,7 @@
                 console.error(error);
             });
     </script>
+
     <!-- menghindari injeksi ads telkom -->
     <!-- </body></html> -->
 

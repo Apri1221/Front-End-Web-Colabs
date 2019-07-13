@@ -82,7 +82,7 @@ body {
   text-align: left;
   background-color: #eee;
   /* color: #3C4858; */
-  color: #212529;
+  color: black;
 }
 
 [tabindex="-1"]:focus {
@@ -112,7 +112,7 @@ h6 {
 /* di edit font family nya size dan color */
 p {
   font: 1rem/1.7 'PT Sans', sans-serif;
-  color: #2b2b2b;
+  color: black;
   margin: 0 0 10px
 }
 
@@ -1837,23 +1837,25 @@ pre code {
   border: 0
 }
 
+
+
 /* di edit untuk inline editor */
 /* height: 36px; */
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.4375rem 0;
+  font-size: .875rem;
+  font-weight: 400;
+  padding: .625rem .75rem;
   line-height: 1.5;
   color: #495057;
   background: rgba(0, 0, 0, 0) no-repeat center;
   background-clip: padding-box;
   box-shadow: none;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 1px solid #cad1d7;
+  transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
   background-size: 0 100%, 100% 100%;
-  border: 0;
-  transition: background 0s ease-out;
   border-radius: 0;
-  font-size: 14px
 }
 
 .form-control::-ms-expand {
@@ -2331,7 +2333,7 @@ select.form-control-lg:not([size]):not([multiple]),
   vertical-align: middle;
   user-select: none;
   line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
   position: relative;
   padding: 12px 30px;
   margin: 0.3125rem 1px;
@@ -3053,7 +3055,7 @@ input[type="button"].btn-block {
 
 .fade {
   opacity: 0;
-  transition: opacity 0.15s linear
+  transition: opacity 0.1s linear
 }
 
 .fade.show {
@@ -3870,7 +3872,7 @@ tbody.collapse.show {
 
 /* di edit biar ga lebay
   color: #555;
-  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.1); 
 */
 .navbar {
   position: relative;
@@ -3884,7 +3886,7 @@ tbody.collapse.show {
   margin-bottom: 20px;
   /* color: #2B4D59; */
   background-color: #fff!important;
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28), 0 5px 8px -5px rgba(0, 0, 0, 0.15)
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28), 0 5px 8px -5px rgba(0, 0, 0, 0.1)
 }
 
 .navbar>.container,
@@ -4816,7 +4818,7 @@ tbody.collapse.show {
 }
 
 .progress-bar-striped {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem
 }
 
@@ -9483,16 +9485,16 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 .bg-inverse .btn.btn-outline:hover {
   color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline:focus,
 .bg-inverse .btn.btn-outline.focus,
 .bg-inverse .btn.btn-outline:hover {
   color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline:active,
@@ -9500,8 +9502,8 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .open>.bg-inverse .btn.btn-outline.dropdown-toggle,
 .show>.bg-inverse .btn.btn-outline.dropdown-toggle {
   color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
 }
 
@@ -9528,7 +9530,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .open>.bg-inverse .btn.btn-outline.dropdown-toggle.bmd-btn-icon:hover {
-  background-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline.disabled:focus,
@@ -9627,16 +9629,16 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 .bg-inverse .btn.btn-outline-primary:hover {
   color: #7b1fa2;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-primary:focus,
 .bg-inverse .btn.btn-outline-primary.focus,
 .bg-inverse .btn.btn-outline-primary:hover {
   color: #7b1fa2;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-primary:active,
@@ -9644,8 +9646,8 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .open>.bg-inverse .btn.btn-outline-primary.dropdown-toggle,
 .show>.bg-inverse .btn.btn-outline-primary.dropdown-toggle {
   color: #7b1fa2;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
 }
 
@@ -9672,7 +9674,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .open>.bg-inverse .btn.btn-outline-primary.dropdown-toggle.bmd-btn-icon:hover {
-  background-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-primary.disabled:focus,
@@ -9771,16 +9773,16 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 .bg-inverse .btn.btn-outline-secondary:hover {
   color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-secondary:focus,
 .bg-inverse .btn.btn-outline-secondary.focus,
 .bg-inverse .btn.btn-outline-secondary:hover {
   color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-secondary:active,
@@ -9788,8 +9790,8 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .open>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle,
 .show>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle {
   color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
 }
 
@@ -9816,7 +9818,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .open>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle.bmd-btn-icon:hover {
-  background-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-secondary.disabled:focus,
@@ -9915,16 +9917,16 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 .bg-inverse .btn.btn-outline-info:hover {
   color: #00bcd4;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-info:focus,
 .bg-inverse .btn.btn-outline-info.focus,
 .bg-inverse .btn.btn-outline-info:hover {
   color: #00bcd4;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-info:active,
@@ -9932,8 +9934,8 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .open>.bg-inverse .btn.btn-outline-info.dropdown-toggle,
 .show>.bg-inverse .btn.btn-outline-info.dropdown-toggle {
   color: #00bcd4;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
 }
 
@@ -9960,7 +9962,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .open>.bg-inverse .btn.btn-outline-info.dropdown-toggle.bmd-btn-icon:hover {
-  background-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-info.disabled:focus,
@@ -10059,16 +10061,16 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 .bg-inverse .btn.btn-outline-success:hover {
   color: #4caf50;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-success:focus,
 .bg-inverse .btn.btn-outline-success.focus,
 .bg-inverse .btn.btn-outline-success:hover {
   color: #4caf50;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-success:active,
@@ -10076,8 +10078,8 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .open>.bg-inverse .btn.btn-outline-success.dropdown-toggle,
 .show>.bg-inverse .btn.btn-outline-success.dropdown-toggle {
   color: #4caf50;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
 }
 
@@ -10104,7 +10106,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .open>.bg-inverse .btn.btn-outline-success.dropdown-toggle.bmd-btn-icon:hover {
-  background-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-success.disabled:focus,
@@ -10203,16 +10205,16 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 .bg-inverse .btn.btn-outline-warning:hover {
   color: #ff9800;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-warning:focus,
 .bg-inverse .btn.btn-outline-warning.focus,
 .bg-inverse .btn.btn-outline-warning:hover {
   color: #ff9800;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-warning:active,
@@ -10220,8 +10222,8 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .open>.bg-inverse .btn.btn-outline-warning.dropdown-toggle,
 .show>.bg-inverse .btn.btn-outline-warning.dropdown-toggle {
   color: #ff9800;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
 }
 
@@ -10248,7 +10250,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .open>.bg-inverse .btn.btn-outline-warning.dropdown-toggle.bmd-btn-icon:hover {
-  background-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-warning.disabled:focus,
@@ -10347,16 +10349,16 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 .bg-inverse .btn.btn-outline-danger:hover {
   color: #f44336;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-danger:focus,
 .bg-inverse .btn.btn-outline-danger.focus,
 .bg-inverse .btn.btn-outline-danger:hover {
   color: #f44336;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-danger:active,
@@ -10364,8 +10366,8 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .open>.bg-inverse .btn.btn-outline-danger.dropdown-toggle,
 .show>.bg-inverse .btn.btn-outline-danger.dropdown-toggle {
   color: #f44336;
-  background-color: rgba(204, 204, 204, 0.15);
-  border-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.1);
+  border-color: rgba(204, 204, 204, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
 }
 
@@ -10392,7 +10394,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .open>.bg-inverse .btn.btn-outline-danger.dropdown-toggle.bmd-btn-icon:hover {
-  background-color: rgba(204, 204, 204, 0.15)
+  background-color: rgba(204, 204, 204, 0.1)
 }
 
 .bg-inverse .btn.btn-outline-danger.disabled:focus,
@@ -11071,10 +11073,11 @@ label {
   border-radius: 0
 }
 
+/* di edit dari 10px semua menjadi 0px semua */
 @media (max-width:830px) {
   .main-raised {
-      margin-left: 10px;
-      margin-right: 10px
+      margin-left: 0px;
+      margin-right: 0px
   }
 }
 
@@ -14124,7 +14127,7 @@ color: #555;
 }
 
 .info p {
-  color: #6c747f
+  color: #040505
 }
 
 .info-horizontal .icon {
@@ -14177,8 +14180,9 @@ h6,
 .h3,
 .h4 {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: 300;
-  line-height: 1.5em
+  font-weight: 300
+  /* di edit, dimatiin buat video ckin */
+  /* line-height: 1.5em */
 }
 
 h1,
@@ -15325,7 +15329,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .ripple-container .ripple-decorator.ripple-on {
   opacity: 0.1;
-  transition: opacity 0.15s ease-in 0s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s
+  transition: opacity 0.1s ease-in 0s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s
 }
 
 .ripple-container .ripple-decorator.ripple-out {

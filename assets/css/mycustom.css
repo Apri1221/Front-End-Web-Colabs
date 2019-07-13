@@ -1,3 +1,65 @@
+input[type="text"], input[type="password"], input[type="email"] {
+  font: Verdana;
+  height: calc(2.75rem + 2px);
+  font-size: inherit
+}
+
+input[type="password"] {
+  font: bold inherit Verdana;
+}
+
+/* kasih saran */
+
+.btn--primary {
+  background: #7f8ff4;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  padding: 12px 36px;
+}
+
+.btn--primary:hover {
+  background: #6c7ff2;
+}
+
+.btn--primary:active {
+  background: #7f8ff4;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+.btn--inside {
+  margin-left: -80px;
+}
+
+.form__field {
+  width: 60%;
+  background: #fff;
+  color: #000000;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  border: 0;
+  outline: 0;
+  padding: 32px 18px;
+}
+
+@media all and (max-width: 800px) {
+  .form__field {
+    width: 80%
+  }
+}
+
+@media all and (max-width: 500px) {
+  .form__field {
+    width: 90%;
+    margin-left: -4px;
+  }
+  .btn--inside {
+    margin-left: -90px;
+  }
+}
+
+/* akhir dari input pencarian */
+
 /* untuk keperluan table dan pewarnaan table */
 
 tbody:nth-child(odd) {
@@ -368,7 +430,7 @@ aside {
 /* di edit */
 
 .right-sidebar {
-  border-left: 1px solid #e9e9e9;
+  /* border-left: 1px solid #e9e9e9; */
   /* padding: 0 0 0 30px; */
   padding: 0 0 0 30px;
   /* -webkit-box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01);
@@ -378,7 +440,7 @@ aside {
 /* di edit */
 
 .left-sidebar {
-  border-right: 1px solid #e9e9e9;
+  /* border-right: 1px solid #e9e9e9; */
   padding: 0 15px 0 0;
   /* -webkit-box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01);
   box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, .01) */
@@ -629,28 +691,6 @@ article img.pull-right, article .align-right {
   margin: 5px 0 15px 15px
 }
 
-/* ukuran video */
-
-.sesivideo {
-  max-width: 50rem;
-  display: table;
-  margin: 20px auto 0;
-  height: auto
-}
-
-.podcast {
-  margin: -120px auto -60px !important;
-  background: #FFF;
-  position: relative;
-  z-index: 3;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
-}
-
-@media (max-width: 991px) {
-  .podcast {
-    margin: -120px auto !important;
-  }
-}
 
 /* Team Section
 --------------------------------*/
@@ -741,7 +781,8 @@ article img.pull-right, article .align-right {
   bottom: 30px;
   right: 30px;
   cursor: pointer;
-  box-shadow: 0px 2px 5px #666
+  box-shadow: 0px 2px 5px #666;
+  z-index: 5;
 }
 
 .plus {
@@ -945,6 +986,44 @@ article img.pull-right, article .align-right {
   line-height: 40px
 }
 
+.plus::after {
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  left: 19px;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  background: rgba(51, 102, 204, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0%, 35% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(4);
+  }
+}
+
+.plus::after {
+  animation: ripple 1.2s ease-out infinite;
+  animation-delay: 1s;
+}
+
+/* akhir dari sharebutton */
+
 /* overwriting judul section */
 
 .title-section {
@@ -961,9 +1040,6 @@ article img.pull-right, article .align-right {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease-in-out 0s;
-  border-bottom-style: solid;
-  border-bottom-color: lightblue;
-  border-bottom-width: 5px
 }
 
 @media screen and (min-width: 580px) {
@@ -975,15 +1051,30 @@ article img.pull-right, article .align-right {
 
 /* set length of text card */
 
+.card-title {
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 24px;
+  /* n baris dikali X tinggi */
+  max-height: 24px;
+  /* hasilnya */
+  -webkit-line-clamp: 1;
+  /* jumlah baris yang akan ditampilkan */
+  -webkit-box-orient: vertical
+}
+
 .card-text {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  line-height: 16px;
+  line-height: 24px;
   /* n baris dikali X tinggi */
-  max-height: 32px;
+  max-height: 72px;
   /* hasilnya */
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   /* jumlah baris yang akan ditampilkan */
   -webkit-box-orient: vertical
 }
@@ -1004,7 +1095,7 @@ article img.pull-right, article .align-right {
   .widthbox {
     width: 14rem
   }
-  .card .card-body, .card .card-footer {
+  .card .card-carousel, .card .card-footer {
     padding: 1rem
   }
 }
@@ -1211,6 +1302,10 @@ article img.pull-right, article .align-right {
 
 /* kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
 
+.collapsible {
+  font-size: 16px
+}
+
 @media screen and (max-width: 580px) {
   .header-video {
     height: auto !important/* vh jika tidak pada mobile */
@@ -1221,6 +1316,123 @@ article img.pull-right, article .align-right {
   }
 }
 
-.collapsible {
-  font-size: 16px
+@media (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}
+
+/* menghilangkan padding pada card carousel saat versi mobile */
+
+@media (max-width: 600px) {
+  .section-basic .owl-carousel .owl-stage-outer {
+    /* ngakalin, padding total kiri dan kanan itu 20 + 5, maka left dan right -35 */
+    margin: 0 -25px
+  }
+  .container {
+    padding-left: 5px;
+    padding-right: 5px
+  }
+}
+
+.separator {
+  position: absolute;
+  z-index: 1;
+  top: auto;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  transform: translateZ(0);
+  pointer-events: none;
+}
+
+.separator svg {
+  position: absolute;
+  pointer-events: none;
+}
+
+.separator-top {
+  top: 0;
+  bottom: auto;
+}
+
+.separator-top svg {
+  top: 0;
+}
+
+.separator-bottom {
+  top: auto;
+  bottom: 0;
+}
+
+.separator-bottom svg {
+  bottom: 0;
+}
+
+.separator-inverse {
+  transform: rotate(180deg);
+}
+
+.separator-skew {
+  height: 60px;
+}
+
+@media (max-width: 992px) {
+  .separator-skew {
+    z-index: 0;
+  }
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.fill-white {
+  fill: #eee;
+}
+
+/* tambahan untuk membuat warna font navbar jadi hitam */
+
+.navbar.navbar-transparent.dark {
+  background-color: transparent!important;
+  box-shadow: none;
+  padding-top: 25px;
+  color: inherit
+}
+
+@media all and (max-width:991px) {
+  .navbar.navbar-transparent.dark .navbar-toggler .navbar-toggler-icon {
+    background-color: #2B4D59
+  }
+}
+
+.iframe-container {
+  overflow: hidden;
+  /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  padding: 56.25%; 
+  position: relative;
+  display: block;
+  /* mengakali agar penuh layarnya tanpa ada padding */
+  /* padding saat ini (pada mobile) adalah 20 px + 5 px, maka marginnya -25px */
+  /* agar tidak ada kesenjangan dalam embeded video, maka diberi padding bawah 25px */
+  padding-bottom: 25px;
+  margin: 0 -25px
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 4x3 Aspect Ratio */
+
+.iframe-container-4x3 {
+  padding-top: 75%;
 }
