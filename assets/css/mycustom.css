@@ -1,14 +1,59 @@
-input[type="text"], input[type="password"], input[type="email"] {
-  font: Verdana;
+/* Daftar Isi CSS custom Colabs   */
+
+/* ----------------------------   */
+
+/* 1. Tambahan Font dan pengaturan Text Input   */
+
+/* 2. Card dan mod Owl Caraousel       */
+
+/* 3. Divider, Line & Misc             */
+
+/* 4. MOD button dan Share button      */
+
+/* 5. Tentang video dan iframe embed   */
+
+/* 6. MOD Navbar, MOD title, MOD paragraph */
+
+/* ===============================
+1. Font dan pengaturan Text Input, Blog & article
+================================ */
+
+input[type="text"] {
+  font-size: 1.1em;
+  color: black !important;
   height: calc(2.75rem + 2px);
-  font-size: inherit
+}
+
+input[type="password"], input[type="email"] {
+  font: normal 0.95rem Verdana;
+  height: calc(2.75rem + 2px);
+  box-sizing: border-box;
+  -webkit-appearance: none
 }
 
 input[type="password"] {
-  font: bold inherit Verdana;
+  font: bold 0.95rem Verdana;
 }
 
-/* kasih saran */
+.toggle {
+  background: none;
+  border: none;
+  color: #555;
+  /*display: none;*/
+  /*font-size: .9em;*/
+  font-weight: 600;
+  /*padding: .5em;*/
+  position: absolute;
+  right: .75em;
+  top: .75em;
+  z-index: 9;
+}
+
+.eyeIcon {
+  font-size: 2rem;
+}
+
+/* Input pencarian */
 
 .btn--primary {
   background: #7f8ff4;
@@ -60,116 +105,11 @@ input[type="password"] {
 
 /* akhir dari input pencarian */
 
-/* untuk keperluan table dan pewarnaan table */
-
-tbody:nth-child(odd) {
-  background: #f3f3f3
-}
-
-tbody:nth-child(even) {
-  background: #fdfdfd
-}
-
-.collapsible {
-  background-color: #666;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px
-}
-
-.col-active, .collapsible:hover {
-  background-color: #3C4858
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px
-}
-
-.col-active:after {
-  content: "\2212"
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0s;
-  background-color: #fafafa
-}
-
-/*
-  Theme Name: Flattern
-  Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-*/
-
-/* === prettify === */
-
-/* ===================================
-1. General
-==================================== */
+/* Konten dan Post */
 
 a:active {
   outline: 0
 }
-
-/* ===================================
-2. layout
-==================================== */
-
-#wrapper {
-  width: 100%;
-  margin: 0;
-  padding: 0
-}
-
-#wrapper.boxed {
-  width: 1230px;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 0;
-  background: #fff
-}
-
-/* ===================================
-7. Section: call action
-==================================== */
-
-section.callaction {
-  background: #f9f9f9;
-  padding: 50px 0 0 0
-}
-
-/* ===================================
-8. Section: Content
-==================================== */
-
-#content {
-  position: relative;
-  background: #fff;
-  padding: 50px 0 0 0
-}
-
-#content img {
-  max-width: 100%;
-  height: auto
-}
-
-/* ===============================
-13. Elements
-================================ */
-
-/* --- blockquote --- */
 
 blockquote {
   font-size: 1.2rem !important;
@@ -196,8 +136,6 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   color: #555
 }
 
-/* --- pullquotes --- */
-
 .pullquote-left {
   display: block;
   color: #a2a2a2;
@@ -215,10 +153,6 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   line-height: 1.6em;
   padding-right: 20px
 }
-
-/* ===============================
-14. Blog & article
-================================ */
 
 .post-heading h3 {
   padding: 0px 1rem;
@@ -347,30 +281,6 @@ ul.meta-post li a {
   font-weight: 600
 }
 
-/* --- single post --- */
-
-.bottom-article {
-  float: left;
-  width: 100%;
-  border-top: 1px solid #e9e9e9;
-  border-bottom: 1px solid #e9e9e9;
-  padding: 10px 0 10px 0;
-  margin-top: 20px
-}
-
-/* --- author info --- */
-
-.about-author {
-  border: 1px solid #d5d5d5;
-  padding: 20px;
-  float: left;
-  margin-bottom: 5px
-}
-
-.about-author h5 {
-  margin-bottom: 10px
-}
-
 /* --- Comment --- */
 
 .comment-area {
@@ -409,6 +319,316 @@ ul.meta-post li a {
 
 .filter-list {
   margin-top: 20px
+}
+
+/* ===============================
+2. Card dan MOD Owl Carousel
+================================ */
+
+/* card customization */
+
+/* super smooooottthhh hover card */
+
+.box {
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06); */
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+@media screen and (min-width: 580px) {
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.11), 0 5px 8px rgba(105, 105, 105, 0.2)
+  }
+}
+
+/* set length of text card */
+
+.card-title {
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 24px;
+  /* n baris dikali X tinggi */
+  max-height: 24px;
+  /* hasilnya */
+  -webkit-line-clamp: 1;
+  /* jumlah baris yang akan ditampilkan */
+  -webkit-box-orient: vertical
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 24px;
+  /* n baris dikali X tinggi */
+  max-height: 72px;
+  /* hasilnya */
+  -webkit-line-clamp: 3;
+  /* jumlah baris yang akan ditampilkan */
+  -webkit-box-orient: vertical
+}
+
+/* set width content card mobile and desktop */
+
+.widthbox {
+  width: 19rem;
+}
+
+@media (max-width: 767px) {
+  .widthbox {
+    width: 17rem
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .widthbox {
+    width: 14rem
+  }
+  .card .card-carousel, .card .card-footer {
+    padding: 1rem
+  }
+}
+
+/* card carousel -- specific navigation custom */
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent
+}
+
+.owl-theme .owl-nav {
+  margin-top: 10px
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: .5;
+  cursor: default
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 10px
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px
+}
+
+/* dibuat dengan cinta oleh apri */
+
+/* dokumentasi : https://codepen.io/peshoto/pen/yxewzg */
+
+.main-content .owl-theme .owl-prev, .main-content .owl-theme .owl-next {
+  position: absolute;
+  height: 60px;
+  top: 40%;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: block !important;
+  color: inherit;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+  z-index: 100
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  background: #9c27b0;
+  transition: all 0.3s ease-in-out
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #861b99;
+  color: #FFF;
+  text-decoration: none
+}
+
+.main-content .owl-theme .owl-prev i, .main-content .owl-theme .owl-next i {
+  font-size: 3rem;
+  color: #fff
+}
+
+.main-content .owl-theme .owl-prev {
+  left: 0
+}
+
+.main-content .owl-theme .owl-next {
+  right: 0
+}
+
+/* akhir dari carousel edit custom navigasi */
+
+/* diambil dari css pro material kit design dengan cara licik */
+
+/* hanya untuk keperluan rounded avatar card */
+
+.card-profile .card-avatar {
+  width: 130px;
+  max-width: 130px;
+  max-height: 130px
+}
+
+.card-profile [class*=col-] .card-avatar {
+  width: auto
+}
+
+.card-profile .card-avatar, .card-testimonial .card-avatar {
+  margin: -50px auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.11), 0 5px 8px rgba(105, 105, 105, 0.2)
+}
+
+.card-profile .card-avatar img, .card-testimonial .card-avatar img {
+  width: 100%;
+  height: auto
+}
+
+.card-plain.card-profile .card-avatar, .card-plain.card-testimonial .card-avatar {
+  margin-top: 0
+}
+
+.card-testimonial .card-avatar {
+  max-width: 100px;
+  max-height: 100px
+}
+
+.card-testimonial .card-footer .card-avatar {
+  margin-top: 10px;
+  margin-bottom: -60px
+}
+
+/* end of card customization */
+
+/* di edit untuk kecepatan animasi input */
+
+.form-control:focus, .bmd-form-group.is-focused .form-control {
+  background-size: 100% 100%, 100% 100%;
+  transition: all 0.2s ease-in-out;
+  box-shadow: none
+}
+
+/* menghilangkan padding pada card carousel saat versi mobile */
+
+@media (max-width: 600px) {
+  .section-basic .owl-carousel .owl-stage-outer {
+    /* ngakalin, padding total kiri dan kanan itu 20 + 15, maka left dan right -35 */
+    margin: 0 -35px
+  }
+}
+
+@media (max-width:800px) and (min-width:600px) {
+  .section-basic .owl-carousel .owl-stage-outer {
+    /* ngakalin, padding total kiri dan kanan itu 20 + 15, maka left dan right -35 */
+    margin: 0 -4rem
+  }
+}
+
+/* Team Section Card
+--------------------------------*/
+
+#team .team-block {
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.06);
+  height: 254px;
+  overflow: hidden;
+  position: relative;
+  width: 100%
+}
+
+@media (max-width: 991px) {
+  #team .team-block {
+    margin-bottom: 30px
+  }
+}
+
+#team .team-block img {
+  width: 100%
+}
+
+#team .team-block .team-content {
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+  bottom: -147px;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in-out 0s
+}
+
+#team .team-block .team-content ul {
+  display: block;
+  width: 100%
+}
+
+#team .team-block .team-content ul li {
+  display: inline-block
+}
+
+#team .team-block .team-content ul li a {
+  color: #626262
+}
+
+#team .team-block .team-content ul li a .fa {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.3s
+}
+
+/* di edit */
+
+#team .team-block .team-content ul li a .fa:hover {
+  color: #f44336
+}
+
+#team .team-block .team-content ul>span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  text-transform: uppercase
+}
+
+#team .team-block:hover .team-content {
+  bottom: 0px;
+  transition: all 0.5s ease-in-out 0s
+}
+
+/* hover fb yang ada di profil page */
+
+.name a .fa:hover {
+  color: #f44336
 }
 
 /* ===============================
@@ -605,7 +825,7 @@ ul.time-post li.time {
 }
 
 /* ===============================
-17. Divider, Line & Misc
+3. Divider, Line & Misc
 ================================ */
 
 .solidline {
@@ -626,42 +846,6 @@ ul.time-post li.time {
 .blankline {
   height: 1px;
   margin: 0 0 30px
-}
-
-/* =============================
-18. Position & alignment
-============================= */
-
-.absolute {
-  position: absolute
-}
-
-.relative {
-  position: relative
-}
-
-.aligncenter {
-  text-align: center
-}
-
-.aligncenter span {
-  margin-left: 0
-}
-
-.floatright {
-  float: right
-}
-
-.floatleft {
-  float: left
-}
-
-.floatnone {
-  float: none
-}
-
-.aligncenter {
-  text-align: center
 }
 
 /* --- Image allignment style --- */
@@ -691,517 +875,55 @@ article img.pull-right, article .align-right {
   margin: 5px 0 15px 15px
 }
 
+/* untuk keperluan table dan pewarnaan table dashboard */
 
-/* Team Section
---------------------------------*/
-
-#team .team-block {
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.06);
-  height: 254px;
-  overflow: hidden;
-  position: relative;
-  width: 100%
+tbody:nth-child(odd) {
+  background: #f3f3f3
 }
 
-@media (max-width: 991px) {
-  #team .team-block {
-    margin-bottom: 30px
-  }
+tbody:nth-child(even) {
+  background: #fdfdfd
 }
 
-#team .team-block img {
-  width: 100%
-}
-
-#team .team-block .team-content {
-  background: #fff none repeat scroll 0 0;
-  bottom: 0;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
-  bottom: -147px;
-  padding: 20px 0;
-  position: absolute;
-  width: 100%;
-  transition: all 0.5s ease-in-out 0s
-}
-
-#team .team-block .team-content ul {
-  display: block;
-  width: 100%
-}
-
-#team .team-block .team-content ul li {
-  display: inline-block
-}
-
-#team .team-block .team-content ul li a {
-  color: #626262
-}
-
-#team .team-block .team-content ul li a .fa {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-  transition: 0.3s
-}
-
-/* di edit */
-
-#team .team-block .team-content ul li a .fa:hover {
-  color: #f44336
-}
-
-#team .team-block .team-content ul>span {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  margin-bottom: 20px;
-  text-transform: uppercase
-}
-
-#team .team-block:hover .team-content {
-  bottom: 0px;
-  transition: all 0.5s ease-in-out 0s
-}
-
-/* hover fb yang ada di profil page */
-
-.name a .fa:hover {
-  color: #f44336
-}
-
-/* share button */
-
-#floating-button {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background: #f44336;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  cursor: pointer;
-  box-shadow: 0px 2px 5px #666;
-  z-index: 5;
-}
-
-.plus {
+.collapsible {
+  background-color: #666;
   color: white;
-  position: absolute;
-  top: 0;
-  display: block;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 53px;
-  font-size: 38px;
-  font-family: "Roboto";
-  font-weight: 300;
-  animation: plus-out 0.3s;
-  transition: all 0.3s
-}
-
-#container-floating {
-  position: fixed;
-  width: 70px;
-  height: 70px;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1
-}
-
-#container-floating:hover {
-  height: 400px;
-  width: 90px;
-  padding: 30px
-}
-
-#container-floating:hover .plus {
-  animation: plus-in 0.15s linear;
-  animation-fill-mode: forwards
-}
-
-.edit {
-  position: absolute;
-  top: 0;
-  display: block;
-  bottom: 0;
-  left: 0;
-  display: block;
-  right: 0;
-  padding: 0;
-  opacity: 0;
-  margin: auto;
-  line-height: 65px;
-  transform: rotateZ(-70deg);
-  transition: all 0.3s;
-  animation: edit-out 0.3s
-}
-
-#container-floating:hover .edit {
-  animation: edit-in 0.2s;
-  animation-delay: 0.1s;
-  animation-fill-mode: forwards
-}
-
-@keyframes edit-in {
-  from {
-    opacity: 0;
-    transform: rotateZ(-70deg)
-  }
-  to {
-    opacity: 1;
-    transform: rotateZ(0deg)
-  }
-}
-
-@keyframes edit-out {
-  from {
-    opacity: 1;
-    transform: rotateZ(0deg)
-  }
-  to {
-    opacity: 0;
-    transform: rotateZ(-70deg)
-  }
-}
-
-@keyframes plus-in {
-  from {
-    opacity: 1;
-    transform: rotateZ(0deg)
-  }
-  to {
-    opacity: 0;
-    transform: rotateZ(180deg)
-  }
-}
-
-@keyframes plus-out {
-  from {
-    opacity: 0;
-    transform: rotateZ(180deg)
-  }
-  to {
-    opacity: 1;
-    transform: rotateZ(0deg)
-  }
-}
-
-.nds {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: fixed;
-  z-index: 300;
-  transform: scale(0);
-  cursor: pointer
-}
-
-.nd1 {
-  background: white;
-  right: 40px;
-  bottom: 120px;
-  animation-delay: 0.2s;
-  animation: bounce-out-nds 0.3s linear;
-  animation-fill-mode: forwards
-}
-
-.nd3 {
-  background: white;
-  right: 40px;
-  bottom: 180px;
-  animation-delay: 0.15s;
-  animation: bounce-out-nds 0.15s linear;
-  animation-fill-mode: forwards
-}
-
-.nd4 {
-  background: white;
-  right: 40px;
-  bottom: 240px;
-  animation-delay: 0.1s;
-  animation: bounce-out-nds 0.1s linear;
-  animation-fill-mode: forwards
-}
-
-.nd5 {
-  background: white;
-  background-size: 100%;
-  right: 40px;
-  bottom: 300px;
-  animation-delay: 0.08s;
-  animation: bounce-out-nds 0.1s linear;
-  animation-fill-mode: forwards
-}
-
-@keyframes bounce-nds {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1;
-    transform: scale(1)
-  }
-}
-
-@keyframes bounce-out-nds {
-  from {
-    opacity: 1;
-    transform: scale(1)
-  }
-  to {
-    opacity: 0;
-    transform: scale(0)
-  }
-}
-
-#container-floating:hover .nds {
-  animation: bounce-nds 0.1s linear;
-  animation-fill-mode: forwards
-}
-
-#container-floating:hover .nd3 {
-  animation-delay: 0.08s
-}
-
-#container-floating:hover .nd4 {
-  animation-delay: 0.15s
-}
-
-#container-floating:hover .nd5 {
-  animation-delay: 0.2s
-}
-
-.reminder {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  line-height: 40px
-}
-
-.plus::after {
-  content: '';
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 18px;
-  right: 0;
-  left: 19px;
-  bottom: 0;
-  width: 18px;
-  height: 18px;
-  background: rgba(51, 102, 204, .5);
-  opacity: 0;
-  border-radius: 100%;
-  transform-origin: 50% 50%;
-}
-
-@keyframes ripple {
-  0%, 35% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(4);
-  }
-}
-
-.plus::after {
-  animation: ripple 1.2s ease-out infinite;
-  animation-delay: 1s;
-}
-
-/* akhir dari sharebutton */
-
-/* overwriting judul section */
-
-.title-section {
-  color: #9c27b0
-}
-
-/* card customization */
-
-/* super smooooottthhh hover card */
-
-.box {
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06); */
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
-  transition: all 0.2s ease-in-out 0s;
-}
-
-@media screen and (min-width: 580px) {
-  .box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.11), 0 5px 8px rgba(105, 105, 105, 0.2)
-  }
-}
-
-/* set length of text card */
-
-.card-title {
-  clear: both;
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  line-height: 24px;
-  /* n baris dikali X tinggi */
-  max-height: 24px;
-  /* hasilnya */
-  -webkit-line-clamp: 1;
-  /* jumlah baris yang akan ditampilkan */
-  -webkit-box-orient: vertical
-}
-
-.card-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  line-height: 24px;
-  /* n baris dikali X tinggi */
-  max-height: 72px;
-  /* hasilnya */
-  -webkit-line-clamp: 3;
-  /* jumlah baris yang akan ditampilkan */
-  -webkit-box-orient: vertical
-}
-
-/* set width content card mobile and desktop */
-
-.widthbox {
-  width: 19rem;
-}
-
-@media (max-width: 767px) {
-  .widthbox {
-    width: 17rem
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .widthbox {
-    width: 14rem
-  }
-  .card .card-carousel, .card .card-footer {
-    padding: 1rem
-  }
-}
-
-/* card carousel -- specific navigation custom */
-
-/* dibuat dengan cinta oleh apri */
-
-/* dokumentasi : https://codepen.io/peshoto/pen/yxewzg */
-
-.main-content .owl-theme .owl-prev, .main-content .owl-theme .owl-next {
-  position: absolute;
-  height: 60px;
-  top: 40%;
-  margin-left: 0px;
-  margin-right: 0px;
-  display: block !important;
-  color: inherit;
-  border: none;
-  border-radius: 0px;
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
-  z-index: 100
-}
-
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-  background: #9c27b0;
-  transition: all 0.3s ease-in-out
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-  background: #861b99
-}
-
-.main-content .owl-theme .owl-prev i, .main-content .owl-theme .owl-next i {
-  font-size: 3rem;
-  color: #fff
-}
-
-.main-content .owl-theme .owl-prev {
-  left: 0
-}
-
-.main-content .owl-theme .owl-next {
-  right: 0
-}
-
-/* akhir dari carousel edit custom navigasi */
-
-/* diambil dari css pro material kit design dengan cara licik */
-
-/* hanya untuk keperluan rounded avatar card */
-
-.card-profile .card-avatar {
-  width: 130px;
-  max-width: 130px;
-  max-height: 130px
-}
-
-.card-profile [class*=col-] .card-avatar {
-  width: auto
-}
-
-.card-profile .card-avatar, .card-testimonial .card-avatar {
-  margin: -50px auto 0;
-  border-radius: 50%;
-  overflow: hidden;
-  padding: 0;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.11), 0 5px 8px rgba(105, 105, 105, 0.2)
-}
-
-.card-profile .card-avatar img, .card-testimonial .card-avatar img {
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
-  height: auto
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px
 }
 
-.card-plain.card-profile .card-avatar, .card-plain.card-testimonial .card-avatar {
-  margin-top: 0
+.col-active, .collapsible:hover {
+  background-color: #3C4858
 }
 
-.card-testimonial .card-avatar {
-  max-width: 100px;
-  max-height: 100px
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px
 }
 
-.card-testimonial .card-footer .card-avatar {
-  margin-top: 10px;
-  margin-bottom: -60px
+.col-active:after {
+  content: "\2212"
 }
 
-/* end of card customization */
-
-/* di edit untuk padding carousel header untuk versi mobile*/
-
-@media screen and (max-width: 580px) {
-  .col-md-6 {
-    padding: 25px;
-  }
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0s;
+  background-color: #fafafa
 }
 
-/* di edit untuk kecepatan animasi input */
-
-.form-control:focus, .bmd-form-group.is-focused .form-control {
-  background-size: 100% 100%, 100% 100%;
-  transition: all 0.2s ease-in-out;
-  box-shadow: none
-}
+/* ===================================
+4. MOD button dan Share button
+==================================== */
 
 /* tambahan tombol css */
 
@@ -1298,9 +1020,173 @@ article img.pull-right, article .align-right {
   }
 }
 
-/* modifikasi header index.html (halaman utama) jika ada di mobile, buat auto tingginya */
+/* share button */
 
-/* kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
+#container-floating {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 30px;
+  right: 0px;
+  z-index: 1
+}
+
+.gambar-share {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  line-height: 40px
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.fab {
+  transition: all 400ms ease-in-out;
+  width: 58px;
+  height: 58px;
+  background-color: #f44336;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2em;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16), 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.fab i {
+  transition: all 300ms ease-in-out;
+  will-change: transform;
+}
+
+.inner-fabs .fab {
+  width: 45px;
+  height: 45px;
+  right: 38px;
+  bottom: 20px;
+  font-size: 1.5em;
+  will-change: bottom;
+  box-shadow: none;
+  background-color: transparent
+}
+
+
+@keyframes bounce-nds {
+  from {
+    opacity: 0;
+    transform: scale(0.8)
+  }
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes bounce-out-nds {
+  from {
+    opacity: 1;
+    transform: scale(1)
+  }
+  to {
+    opacity: 0;
+    transform: scale(0)
+  }
+}
+
+.inner-fabs.show .fab:nth-child(1) {
+  bottom: 90px;
+  animation-name: bounce-nds;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.inner-fabs.show .fab:nth-child(2) {
+  bottom: 150px;
+  animation-name: bounce-nds;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.inner-fabs.show .fab:nth-child(3) {
+  bottom: 210px;
+  animation-name: bounce-nds;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.inner-fabs.show .fab:nth-child(4) {
+  bottom: 270px;
+  animation-name: bounce-nds;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.inner-fabs.show .fab:nth-child(5) {
+  bottom: 330px;
+  animation-name: bounce-nds;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.inner-fabs.show .fab:nth-child(6) {
+  bottom: 390px;
+}
+
+.inner-fabs.show + .fab i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fab:before {
+  content: attr(data-tooltip);
+  transition: opacity 150ms cubic-bezier(0.4, 0, 1, 1);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #ececec;
+  right: 50px;
+  top: 25%;
+  background-color: rgba(70, 70, 70, 0.9);
+  font-size: 0.5em;
+  line-height: 1em;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 2px;
+  padding: 6px 8px;
+  max-width: 200px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+
+/* akhir dari sharebutton */
+
+
+
+
+
+/* ===================================
+5. Tentang Video iframe
+==================================== */
+
+/* modifikasi header index.html (halaman utama) jika ada di mobile, buat auto tingginya 
+kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
 
 .collapsible {
   font-size: 16px
@@ -1322,76 +1208,45 @@ article img.pull-right, article .align-right {
   }
 }
 
-/* menghilangkan padding pada card carousel saat versi mobile */
+.sesivideo {
+  overflow: hidden;
+  /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  padding-top: 56.25%;
+  position: relative;
+  display: block
+}
 
-@media (max-width: 600px) {
-  .section-basic .owl-carousel .owl-stage-outer {
-    /* ngakalin, padding total kiri dan kanan itu 20 + 5, maka left dan right -35 */
+.sesivideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media all and (max-width:600px) {
+  .sesivideo {
+    /* mengakali agar penuh layarnya tanpa ada padding */
+    /* padding saat ini (pada mobile) adalah 20 px + 5 px, maka marginnya -25px */
+    /* agar tidak ada kesenjangan dalam embeded video, maka diberi padding bawah 25px */
+    padding-bottom: 25px;
     margin: 0 -25px
   }
-  .container {
-    padding-left: 5px;
-    padding-right: 5px
-  }
 }
 
-.separator {
-  position: absolute;
-  z-index: 1;
-  top: auto;
-  right: 0;
-  left: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 150px;
-  transform: translateZ(0);
-  pointer-events: none;
+/* 4x3 Aspect Ratio */
+
+.sesivideo-4x3 {
+  padding-top: 75%;
 }
 
-.separator svg {
-  position: absolute;
-  pointer-events: none;
-}
+/* 6. Custom Navbar dan Title */
 
-.separator-top {
-  top: 0;
-  bottom: auto;
-}
+/* overwriting judul section */
 
-.separator-top svg {
-  top: 0;
-}
-
-.separator-bottom {
-  top: auto;
-  bottom: 0;
-}
-
-.separator-bottom svg {
-  bottom: 0;
-}
-
-.separator-inverse {
-  transform: rotate(180deg);
-}
-
-.separator-skew {
-  height: 60px;
-}
-
-@media (max-width: 992px) {
-  .separator-skew {
-    z-index: 0;
-  }
-}
-
-svg {
-  overflow: hidden;
-  vertical-align: middle;
-}
-
-.fill-white {
-  fill: #eee;
+.title-section {
+  color: #9c27b0
 }
 
 /* tambahan untuk membuat warna font navbar jadi hitam */
@@ -1409,30 +1264,23 @@ svg {
   }
 }
 
-.iframe-container {
-  overflow: hidden;
-  /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
-  padding: 56.25%; 
-  position: relative;
-  display: block;
-  /* mengakali agar penuh layarnya tanpa ada padding */
-  /* padding saat ini (pada mobile) adalah 20 px + 5 px, maka marginnya -25px */
-  /* agar tidak ada kesenjangan dalam embeded video, maka diberi padding bawah 25px */
-  padding-bottom: 25px;
-  margin: 0 -25px
+.plyr {
+  border-radius: 0px;
 }
 
-.iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+/* hapus padding yang ada di area video detailpodcast */
+
+@media all and (max-width:600px) {
+  .no-gutter>[class*='col-md-8'] {
+    padding-right: 0px;
+    padding-left: 0px
+  }
 }
 
-/* 4x3 Aspect Ratio */
+.plyr__control--overlaid, .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+  background: #b882ff !important
+}
 
-.iframe-container-4x3 {
-  padding-top: 75%;
+.plyr--full-ui input[type=range] {
+  color: #b882ff !important
 }

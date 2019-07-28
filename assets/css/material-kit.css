@@ -111,7 +111,7 @@ h6 {
 
 /* di edit font family nya size dan color */
 p {
-  font: 1rem/1.7 'PT Sans', sans-serif;
+  font: 1.1em/1.7 sans-serif;
   color: black;
   margin: 0 0 10px
 }
@@ -13550,7 +13550,7 @@ color: #555;
   color: inherit;
   padding: 0.9375rem;
   font-weight: 400;
-  font-size: 12px;
+  font-size: .84rem;
   text-transform: uppercase;
   border-radius: 3px;
   line-height: 20px
