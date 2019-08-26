@@ -39,8 +39,9 @@
 </head>
 
 <body class="index-page sidebar-collapse">
-    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="0"
+    <nav class="navbar blurry navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="0"
         id="sectionsNav">
+        <div class="blurrer"></div>
         <div class="container">
             <div class="navbar-translate">
                 <a class="navbar-brand" href="https://www.inseed.web.id/index.html">
@@ -100,7 +101,7 @@
         style="background-image: url('./assets/img/bg6.jpg'); height: 50vh;">
     </div>
 
-    <div class="main main-raised">
+    <div class="main">
         <div class="section section-basic">
             <div class="container">
                 <div class="text-center">
@@ -111,6 +112,19 @@
                 </div>
 
                 <div class="space-0 solidline"></div>
+
+                <!-- disini video -->
+                <!-- <div class="sesivideo iframe-container">
+                            <iframe src="//www.youtube.com/embed/xO51BDBhPWw" allowfullscreen></iframe>
+                        </div> -->
+
+                <!-- untuk html video, bisa dilihat disini https://codepen.io/sampotts/pen/jARJYp?editors=1010 -->
+                <video controls crossorigin playsinline id="player" class="sesivideo"></video>
+
+
+
+                <div class="space-50"></div>
+
 
                 <div class="row no-gutter">
 
@@ -126,52 +140,34 @@
                                 </a>
                             </div>
 
-
                             <div class="fab round" id="fab3">
                                 <a target="_blank"
                                     href="http://www.facebook.com/sharer.php?u=https://www.inseed.web.id">
                                     <img class="gambar-share rounded-circle" src="./assets/img/icon/facebook.svg"
                                         alt="Facebook" />
                                 </a>
-
                             </div>
 
                             <div class="fab round" id="fab2">
                                 <a target="_blank"
                                     href="https://social-plugins.line.me/lineit/share?url=https://www.inseed.web.id">
-                                    <img class="gambar-share rounded-circle" src="./assets/img/icon/line.svg" alt="Line" />
+                                    <img class="gambar-share rounded-circle" src="./assets/img/icon/line.svg"
+                                        alt="Line" />
                                 </a>
                             </div>
 
                         </div>
-                        <div class="fab round" id="fab1" data-toggle="tooltip" data-placement="left" data-original-title="Share konten ini">
+                        <div class="fab round" id="fab1" data-toggle="tooltip" data-placement="left"
+                            data-original-title="Share konten ini">
                             <i class="material-icons" id="fabIcon">share</i>
                         </div>
 
                     </div>
 
-
                     <!-- akhir dari button share -->
-
-
 
                     <!-- isi postingan -->
                     <div class="col-md-8">
-
-                        <!-- disini video -->
-                        <!-- <div class="sesivideo iframe-container">
-                            <iframe src="//www.youtube.com/embed/xO51BDBhPWw" allowfullscreen></iframe>
-                        </div> -->
-
-
-                        <!-- untuk html video, bisa dilihat disini https://codepen.io/sampotts/pen/jARJYp?editors=1010 -->
-                        <video controls crossorigin playsinline id="player" class="sesivideo"></video>
-
-
-
-                        <div class="space-50"></div>
-
-
                         <!-- isi text disini -->
                         <div class="isi">
                             <p>
@@ -273,9 +269,7 @@
     </div>
 
     <!--  End Modal -->
-    <footer class="mdl-mini-footer" style="margin-top:30px;">
-
-    </footer>
+    <!-- <footer class="mdl-mini-footer" style="margin-top:30px;"> </footer> -->
     <!--   Core JS Files   -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" type="text/javascript"></script>
     <!-- slider card carousel -->
