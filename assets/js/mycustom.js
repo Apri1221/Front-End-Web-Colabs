@@ -4,60 +4,37 @@
 
 $(document).ready(function () {
 
-  // fungsi pertama owl-carousel, sudah di MOD untuk bisa punya beberapa carousel dalam 1 page
-  $('.owl-carousel').each(function () {
-    $(this).owlCarousel({
-      loop: false,
-      dots: false,
-      responsiveClass: true,
-      responsive: {
-        // smartphone
-        0: {
-          items: 1,
-          margin: 40,
-          stagePadding: 40
-        },
-        370: {
-          items: 1,
-          margin: 10,
-          stagePadding: 40
-        },
-        500: {
-          items: 2,
-          margin: 200,
-          stagePadding: 40
-        },
-        // tablet
-        650: {
-          items: 2,
-          margin: 200,
-          stagePadding: 40
-        },
-        // ipad pro dan 1024 laptop
-        // di mod agar bisa nampilin custom navigasi
-        1000: {
-          items: 3,
-          margin: 200,
-          stagePadding: 40,
-          nav: true,
-          navText: [
-            '<i class="material-icons" aria-hidden="true">keyboard_arrow_left</i><span class="sr-only">Previous</span>',
-            '<i class="material-icons" aria-hidden="true">keyboard_arrow_right</i><span class="sr-only">Next</span>'
-          ]
-        },
-        // laptop
-        1300: {
-          items: 3,
-          stagePadding: 40,
-          nav: true,
-          navText: [
-            '<i class="material-icons" aria-hidden="true">keyboard_arrow_left</i><span class="sr-only">Previous</span>',
-            '<i class="material-icons" aria-hidden="true">keyboard_arrow_right</i><span class="sr-only">Next</span>'
-          ]
-        }
-      }
+  // Siema carousel
+  const siemas = document.querySelectorAll('.siema');
+
+  // Extend prototype with method that adds arrows to DOM
+  // Style the arrows with CSS or JS — up to you mate
+  Siema.prototype.addArrows = function () {
+
+    // make buttons & append them inside Siema's container
+    this.prevArrow = document.createElement('button');
+    this.nextArrow = document.createElement('button');
+    this.prevArrow.textContent = '<';
+    this.nextArrow.textContent = '>';
+    this.selector.appendChild(this.prevArrow);
+    this.selector.appendChild(this.nextArrow);
+
+    // event handlers on buttons
+    this.prevArrow.addEventListener('click', () => this.prev());
+    this.nextArrow.addEventListener('click', () => this.next());
+  };
+
+  for (const siema of siemas) {
+    const instance = new Siema({
+      perPage: {
+        768: 2,
+        1024: 3,
+      },
+      selector: siema,
     });
-  });
+    instance.addArrows();
+  }
+
 
   // animasi button (efek bubble) tambahan
   var animateButton = function (e) {
@@ -79,7 +56,7 @@ $(document).ready(function () {
   }
 
 
-
+  // untuk tombol share
   let fab1 = document.getElementById("fab1");
   let innerFabs = document.getElementsByClassName("inner-fabs")[0];
 

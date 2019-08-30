@@ -1,0 +1,173 @@
+/* Globals */
+html {
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  background: #fff;
+  color: #444;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 1.6rem;
+  color: #000;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+ul,
+ol {
+  margin: 0 0 1.6rem 1.6rem;
+}
+
+a {
+  color: #EC407A;
+}
+
+hr {
+  display: block;
+  height: 1.6rem;
+  border: 0;
+  box-shadow: inset  0 1px 0 0 #ddd;
+}
+
+img,
+video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+pre {
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+  background: #f7f7f7;
+  font-family: 'Source Code Pro', monospace;
+  box-shadow: inset 0 0 0 1px #eee;
+  overflow-x: auto;
+  vertical-align: top;
+}
+
+code {
+  background: #f7f7f7;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Center stuff on the page */
+.page {
+  width: 100%;
+  max-width: 44rem;
+  margin: 3.2rem auto;
+  padding: 0 1rem;
+}
+
+/* Logo */
+@keyframes waveHane {
+  0% {
+    transform: rotate(4deg);
+  }
+
+  20% {
+    transform: rotate(-4deg);
+  }
+
+  40% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 1.6rem;
+  width: 100%;
+  max-width: 9.2rem;
+}
+
+.logo__hand {
+  animation-name: waveHane;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  transform-origin: center bottom;
+}
+
+/* title */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.title__desc {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+/* siema */
+.siema {
+  margin-bottom: 1.6rem;
+}
+
+.siema__inside {
+  padding: 1.6rem;
+  box-shadow: inset 0 0 0 1px #ddd;
+}
+
+/*Buttons*/
+.btn {
+  display: inline-block;
+  margin-bottom: 1.6rem;
+  padding: 0 1.6rem;
+  border: 0;
+  background: #EC407A;
+  color: #fff;
+  font: inherit;
+  font-size: .875rem;
+  line-height: 2.4rem;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+button:active {
+  background: #f7f7f7;
+}
+
+.browserstack {
+  width: 100%;
+  max-width: 188px;
+}
