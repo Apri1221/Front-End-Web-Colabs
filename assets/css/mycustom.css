@@ -24,7 +24,8 @@ input[type="text"] {
   height: calc(2.75rem + 2px);
 }
 
-input[type="password"], input[type="email"] {
+input[type="password"],
+input[type="email"] {
   font: normal 0.95rem Verdana;
   height: calc(2.75rem + 2px);
   box-sizing: border-box;
@@ -98,6 +99,7 @@ input[type="password"] {
     width: 90%;
     margin-left: -4px;
   }
+
   .btn--inside {
     margin-left: -90px;
   }
@@ -132,7 +134,9 @@ blockquote cite:before {
   content: "\2014 \0020"
 }
 
-blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
+blockquote cite a,
+blockquote cite a:visited,
+blockquote cite a:visited {
   color: #555
 }
 
@@ -325,9 +329,8 @@ ul.meta-post li a {
 2. Card dan MOD Owl Carousel
 ================================ */
 
-/* card customization */
 
-/* super smooooottthhh hover card */
+/* super smooooottthhh hover card untuk carousel */
 
 .box {
   /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06); */
@@ -343,8 +346,6 @@ ul.meta-post li a {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.11), 0 5px 8px rgba(105, 105, 105, 0.2)
   }
 }
-
-/* set length of text card */
 
 .card-title {
   clear: both;
@@ -374,8 +375,6 @@ ul.meta-post li a {
   -webkit-box-orient: vertical
 }
 
-/* set width content card mobile and desktop */
-
 .widthbox {
   width: 18rem;
   /* biar align ke tengah semua cardnya */
@@ -390,24 +389,31 @@ ul.meta-post li a {
 
 @media screen and (max-width: 400px) {
   .widthbox {
-    width: 14rem
+    width: 14rem;
+    margin: 0 auto
   }
-  /* .card .card-carousel, .card .card-footer {
-    padding: 1rem
-  } */
 }
 
+/* bagian ini mengatur besar gambar diseluruh card */
+.container [class*=card] img {
+  height: 200px;
+  /* untuk mencrop otomatis gambar gunakan object fit */
+  object-fit: cover;
+}
+
+
 /* carousel siema lightweight */
+
 .siema {
   position: relative;
   margin: 1rem 0;
 }
 
-.siema > button:nth-of-type(1) {
+.siema>button:nth-of-type(1) {
   position: absolute;
   left: 0;
   top: 50%;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   color: #fff;
   font-size: 2rem;
   border: none;
@@ -417,17 +423,17 @@ ul.meta-post li a {
   transition: all 0.3s ease-in-out
 }
 
-.siema > button:nth-of-type(1):hover {
+.siema>button:nth-of-type(1):hover {
   background: #861b99;
   color: #FFF;
   text-decoration: none
 }
 
-.siema > button:nth-of-type(2) {
+.siema>button:nth-of-type(2) {
   position: absolute;
   right: 0;
   top: 50%;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   color: #fff;
   font-size: 2rem;
   border: none;
@@ -437,16 +443,145 @@ ul.meta-post li a {
   transition: all 0.3s ease-in-out
 }
 
-.siema > button:nth-of-type(2):hover {
+.siema>button:nth-of-type(2):hover {
   background: #861b99;
   color: #FFF;
   text-decoration: none
 }
 
-
 /* akhir dari carousel edit custom navigasi */
 
-/* diambil dari css pro material kit design dengan cara licik */
+
+/* card untuk crowdfunding */
+
+
+.ticket-card {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+/* hanya akan beranimasi di desktop */
+@media screen and (min-width: 580px) {
+
+  .ticket-card:hover .cover img,
+  .ticket-card.active .cover img {
+    -moz-transform: translate(0, -20px);
+    -o-transform: translate(0, -20px);
+    -ms-transform: translate(0, -20px);
+    -webkit-transform: translate(0, -20px);
+    transform: translate(0, -20px);
+    box-shadow: 0 10px 20px -4px rgba(22, 22, 22, 0.5);
+  }
+}
+
+.ticket-card .cover {
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  margin: 15px;
+}
+
+.ticket-card .cover img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-top: -30px;
+  box-shadow: 0 10px 16px -6px rgba(22, 22, 22, 0.5);
+  border-radius: 4px;
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+  -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+  -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+  -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+  transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+}
+
+.ticket-card .funding {
+  float: left;
+}
+
+.ticket-card .funding .info {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #BBBBBB;
+  margin-bottom: 0;
+}
+
+.ticket-card .funding .name {
+  font-weight: 200;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.ticket-card .ticket {
+  float: left;
+}
+
+.ticket-card .price {
+  float: right;
+  text-align: right;
+}
+
+.ticket-card .price .from {
+  font-size: 14px;
+  color: #555;
+}
+
+.ticket-card .price .value {
+  font-size: 24px;
+  font-weight: 200;
+  color: #FF7433;
+  margin-top: -5px;
+}
+
+.ticket-card .body {
+  padding: 5px 30px;
+}
+
+.ticket-card .body .info {
+  color: #777777;
+}
+
+.ticket-card .body .date {
+  padding-top: 10px;
+}
+
+.ticket-card .body .date {
+  float: right;
+  text-align: right;
+  font: 0.9rem sans-serif;
+}
+
+.ticket-card .body .progress {
+  height: 10px !important;
+}
+
+.ticket-card .body .fa {
+  color: #CCCCCC;
+  margin-right: 5px;
+}
+
+.ticket-card .footer .btn {
+  width: 40%;
+  text-transform: uppercase;
+}
+
+.ticket-card .footer .btn:focus,
+.ticket-card .footer .btn:hover,
+.ticket-card .footer .btn:active {
+  outline: none !important;
+}
+
+
+
+
+
+/* card untuk foto profil */
 
 /* hanya untuk keperluan rounded avatar card */
 
@@ -460,7 +595,8 @@ ul.meta-post li a {
   width: auto
 }
 
-.card-profile .card-avatar, .card-testimonial .card-avatar {
+.card-profile .card-avatar,
+.card-testimonial .card-avatar {
   margin: -50px auto 0;
   border-radius: 50%;
   overflow: hidden;
@@ -468,12 +604,14 @@ ul.meta-post li a {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.11), 0 5px 8px rgba(105, 105, 105, 0.2)
 }
 
-.card-profile .card-avatar img, .card-testimonial .card-avatar img {
+.card-profile .card-avatar img,
+.card-testimonial .card-avatar img {
   width: 100%;
   height: auto
 }
 
-.card-plain.card-profile .card-avatar, .card-plain.card-testimonial .card-avatar {
+.card-plain.card-profile .card-avatar,
+.card-plain.card-testimonial .card-avatar {
   margin-top: 0
 }
 
@@ -491,7 +629,8 @@ ul.meta-post li a {
 
 /* di edit untuk kecepatan animasi input */
 
-.form-control:focus, .bmd-form-group.is-focused .form-control {
+.form-control:focus,
+.bmd-form-group.is-focused .form-control {
   background-size: 100% 100%, 100% 100%;
   transition: all 0.2s ease-in-out;
   box-shadow: none
@@ -619,16 +758,19 @@ aside {
     padding: 0px;
     border-right: none
   }
+
   .right-sidebar {
     padding: 0px;
     border-left: none
   }
+
   .isi {
     padding: 2rem 3rem 1rem
   }
 }
 
-.left-sidebar .widget h3, .left-sidebar .widget .widget-content {
+.left-sidebar .widget h3,
+.left-sidebar .widget .widget-content {
   padding-right: 20px
 }
 
@@ -636,18 +778,25 @@ aside .widget {
   margin-bottom: 40px
 }
 
-ul.cat, ul.recent, ul.folio-detail, ul.contact-info {
+ul.cat,
+ul.recent,
+ul.folio-detail,
+ul.contact-info {
   margin: 0;
   padding: 0;
   list-style: none
 }
 
-ul.cat li, ul.recent li, ul.folio-detail li, ul.contact-info li {
+ul.cat li,
+ul.recent li,
+ul.folio-detail li,
+ul.contact-info li {
   margin: 0 0 15px 0;
   list-style: none
 }
 
-ul.cat li a, ul.folio-detail li a {
+ul.cat li a,
+ul.folio-detail li a {
   color: #656565
 }
 
@@ -794,33 +943,6 @@ ul.time-post li.time {
   margin: 0 0 30px
 }
 
-/* --- Image allignment style --- */
-
-img.pull-left, .align-left {
-  float: left;
-  margin: 0 15px 15px 0
-}
-
-.widget img.pull-left {
-  float: left;
-  margin: 0 15px 15px 0
-}
-
-img.pull-right, .align-right {
-  float: right;
-  margin: 0 0 15px 15px
-}
-
-article img.pull-left, article .align-left {
-  float: left;
-  margin: 5px 15px 15px 0
-}
-
-article img.pull-right, article .align-right {
-  float: right;
-  margin: 5px 0 15px 15px
-}
-
 /* untuk keperluan table dan pewarnaan table dashboard */
 
 tbody:nth-child(odd) {
@@ -843,7 +965,8 @@ tbody:nth-child(even) {
   font-size: 15px
 }
 
-.col-active, .collapsible:hover {
+.col-active,
+.collapsible:hover {
   background-color: #3C4858
 }
 
@@ -898,7 +1021,8 @@ tbody:nth-child(even) {
   outline: 0;
 }
 
-.bubbly-button:before, .bubbly-button:after {
+.bubbly-button:before,
+.bubbly-button:after {
   position: absolute;
   content: '';
   display: block;
@@ -944,9 +1068,11 @@ tbody:nth-child(even) {
   0% {
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
   }
+
   50% {
     background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
   }
+
   100% {
     background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
@@ -957,9 +1083,11 @@ tbody:nth-child(even) {
   0% {
     background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
   }
+
   50% {
     background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
   }
+
   100% {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
@@ -974,7 +1102,7 @@ tbody:nth-child(even) {
   height: 70px;
   bottom: 30px;
   right: 0px;
-  z-index: 1
+  z-index: 99
 }
 
 .gambar-share {
@@ -1004,9 +1132,9 @@ tbody:nth-child(even) {
   right: 30px;
   bottom: 15px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
   color: white;
   font-size: 2em;
@@ -1035,6 +1163,7 @@ tbody:nth-child(even) {
     opacity: 0;
     transform: scale(0.8)
   }
+
   to {
     opacity: 1;
     transform: scale(1)
@@ -1046,6 +1175,7 @@ tbody:nth-child(even) {
     opacity: 1;
     transform: scale(1)
   }
+
   to {
     opacity: 0;
     transform: scale(0)
@@ -1091,9 +1221,9 @@ tbody:nth-child(even) {
   bottom: 390px;
 }
 
-.inner-fabs.show + .fab i {
+.inner-fabs.show+.fab i {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .fab:before {
@@ -1140,8 +1270,10 @@ kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
 
 @media screen and (max-width: 580px) {
   .header-video {
-    height: auto !important/* vh jika tidak pada mobile */
+    height: auto !important
+      /* vh jika tidak pada mobile */
   }
+
   .row-video {
     margin-top: 50px;
     margin-bottom: 100px
@@ -1154,32 +1286,16 @@ kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
   }
 }
 
-.sesivideo {
-  overflow: hidden;
-  /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
-  padding-top: 56.25%;
-  position: relative;
-  display: block
-}
-
 .plyr {
   border-radius: 16px;
-  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   margin: 0 10em
 }
+
 @media (max-width: 1024px) {
   .plyr {
     margin: 0
   }
-}
-
-.sesivideo iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 
 @media (min-width: 480px) {
@@ -1188,49 +1304,12 @@ kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
   }
 }
 
-@media all and (max-width:600px) {
-  .sesivideo {
-    /* mengakali agar penuh layarnya tanpa ada padding */
-    /* padding saat ini (pada mobile) adalah 20 px + 5 px, maka marginnya -25px */
-    /* agar tidak ada kesenjangan dalam embeded video, maka diberi padding bawah 25px */
-    padding-bottom: 25px;
-    margin: 0 -25px
-  }
-  .plyr {
-    margin: 0
-  }
-}
-
-/* 4x3 Aspect Ratio */
-
-.sesivideo-4x3 {
-  padding-top: 75%;
-}
-
-/* 6. Custom Navbar dan Title */
 
 /* overwriting judul section */
 
 .title-section {
   color: #9c27b0
 }
-
-/* tambahan untuk membuat warna font navbar jadi hitam */
-
-.navbar.navbar-transparent.dark {
-  background-color: transparent!important;
-  box-shadow: none;
-  padding-top: 25px;
-  color: inherit
-}
-
-@media all and (max-width:991px) {
-  .navbar.navbar-transparent.dark .navbar-toggler .navbar-toggler-icon {
-    background-color: #2B4D59
-  }
-}
-
-
 
 /* hapus padding yang ada di area video detailpodcast */
 
@@ -1241,12 +1320,38 @@ kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
   }
 }
 
-.plyr__control--overlaid, .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+.plyr__control--overlaid,
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
   background: #b882ff !important
 }
 
 .plyr--full-ui input[type=range] {
   color: #b882ff !important
+}
+
+
+
+
+/* 6. Custom Navbar dan Title */
+
+/* navbar kustomisasi */
+
+
+/* tambahan untuk membuat warna font navbar jadi hitam */
+
+.navbar.navbar-transparent.dark {
+  background-color: transparent !important;
+  box-shadow: none;
+  padding-top: 25px;
+  color: inherit
+}
+
+@media all and (max-width:991px) {
+  .navbar.navbar-transparent.dark .navbar-toggler .navbar-toggler-icon {
+    background-color: #2B4D59
+  }
 }
 
 
@@ -1268,9 +1373,9 @@ kenapa? agar kontainer video nya kelihatan, padding dan margin berpengaruh */
   -moz-backdrop-filter: saturate(180%) blur(10px);
   -o-backdrop-filter: saturate(180%) blur(10px);
   -ms-backdrop-filter: saturate(180%) blur(10px);
-  background: rgba(255,255,255,.9);
+  background: rgba(255, 255, 255, .9);
   width: 100%;
   padding: 0;
   margin: 0;
-  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28), 0 5px 8px -5px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28), 0 5px 8px -5px rgba(0, 0, 0, 0.1);
 }

@@ -35,6 +35,8 @@ $(document).ready(function () {
     instance.addArrows();
   }
 
+  // akhir dari siema carousel
+
 
   // animasi button (efek bubble) tambahan
   var animateButton = function (e) {
@@ -54,6 +56,8 @@ $(document).ready(function () {
   for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
   }
+
+  // akhir dari bubbly button
 
 
   // untuk tombol share
@@ -78,5 +82,6 @@ $(document).ready(function () {
     }
 
   });
+  // akhir dari tombol share
 
 });
