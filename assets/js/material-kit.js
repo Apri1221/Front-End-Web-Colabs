@@ -160,11 +160,15 @@ materialKit = {
       if (materialKit.misc.transparent) {
         materialKit.misc.transparent = false;
         $('.navbar-color-on-scroll').removeClass('navbar-transparent');
+        // ditambah
+        $('.logo-color-on-scroll').removeClass('logoconvert');
       }
     } else {
       if (!materialKit.misc.transparent) {
         materialKit.misc.transparent = true;
         $('.navbar-color-on-scroll').addClass('navbar-transparent');
+        // ditambah
+        $('.logo-color-on-scroll').addClass('logoconvert');
       }
     }
   }, 5)
